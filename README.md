@@ -1,2 +1,2 @@
-# SeleniumTesting
-A sample repository for GitHub Actions with Selenium Webdriver Testing
+# GhostInspector
+A sample repository for GitHub Actions with Ghost Inspector
