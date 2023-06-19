@@ -15,7 +15,7 @@ jobs:
 
       - name: Run Ghost Inspector tests
         env:
-          GHOST_INSPECTOR_API_KEY: ${{ secrets.a42965709508260d5aea2549a29c76610e99aa4f }}
+          GHOST_INSPECTOR_API_KEY: ${{ secrets.GHOST_INPECTOR_API_KEY }}
         run: |
           curl -X POST "https://api.ghostinspector.com/v1/suites/648c4d0aca40d9f69199696e/execute/?apiKey=$a42965709508260d5aea2549a29c76610e99aa4f"
 
