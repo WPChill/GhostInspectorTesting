@@ -1,21 +1,18 @@
-name: Ghost Inspector Tests
-
+name: GI
 on:
   push:
-    branches:
-      - main
+    branches: main
+  pull_request:
+    branches: main
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Modula check
-        uses: actions/main
-
-      - name: Run Ghost Inspector tests
-        env:
-          GHOST_INSPECTOR_API_KEY: ${{ secrets.GHOST_INPECTOR_API_KEY }}
-        run: |
-          curl -X POST "https://api.ghostinspector.com/v1/suites/648c4d0aca40d9f69199696e/execute/?apiKey=$a42965709508260d5aea2549a29c76610e99aa4f"
-
+      - name: execute Ghost Inspector test
+        uses: docker://ghostinspector/cli
+        with:
+          args: test execute ${{ secrets.GI_TEST }} \
+            --apiKey ${{ secrets.GI_API_KEY }} \
+            --startUrl https://app.ghostinspector.com/suites/64914af1b9a9f4eb2f338efe \
+            --errorOnFail
