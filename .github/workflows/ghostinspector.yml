@@ -14,5 +14,5 @@ jobs:
         with:
           args: test execute ${{ secrets.GI_TEST }} \
             --apiKey ${{ secrets.GI_API_KEY }} \
-            --startUrl https://app.ghostinspector.com/suites/64914af1b9a9f4eb2f338efe \
+            --startUrl https://tests.tamewp.com \
             --errorOnFail
