@@ -7,12 +7,12 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: chrome
     steps:
       - name: execute Ghost Inspector test
         uses: docker://ghostinspector/cli
         with:
-          args: test execute ${{ secrets.GI_TEST }} \
+          args: test execute ${{ secrets.GI_TEST_EXTENSIONS }} \
             --apiKey ${{ secrets.GI_API_KEY }} \
             --startUrl https://tests.tamewp.com \
             --errorOnFail
