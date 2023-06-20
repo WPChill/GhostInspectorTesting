@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: chrome
+    runs-on: windows-latest
     steps:
       - name: execute Ghost Inspector test
         uses: docker://ghostinspector/cli
