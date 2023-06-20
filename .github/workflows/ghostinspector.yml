@@ -12,7 +12,7 @@ jobs:
       - name: execute Ghost Inspector test
         uses: docker://ghostinspector/cli
         with:
-          args: test execute ${{ secrets.GI_TEST_EXTENSIONS }} \
+          args: test execute ${{ secrets.GI_ADVANCEDSHORTCODE }} \
             --apiKey ${{ secrets.GI_API_KEY }} \
             --startUrl https://tests.tamewp.com \
             --errorOnFail
