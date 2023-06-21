@@ -12,7 +12,7 @@ jobs:
       - name: execute Ghost Inspector test
         uses: docker://ghostinspector/cli
         with:
-          args: test execute ${{ secrets.GI_ADVANCEDSHORTCODE }} \
+          args: test execute ${{ secrets.GI_INVALIDLOGIN }} \
             --apiKey ${{ secrets.GI_API_KEY }} \
             --startUrl https://tests.tamewp.com/wp-login.php?redirect_to=https%3A%2F%2Ftests.tamewp.com%2Fwp-admin%2F&reauth=1 \
             --errorOnFail
