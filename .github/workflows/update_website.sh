@@ -1,4 +1,4 @@
-#!/bin/bash
+##!/bin/bash
 
 # Define the local and remote branch names
 ##local_branch="main"
@@ -27,3 +27,6 @@
 # Your deployment command goes here
 ##echo "Updates deployed successfully!"
 
+# This file needs to be made executable with  chmod +x update_website.sh
+# To run the script :  ./update_website.sh
+# Note: We need to update the local branch and remote branch
