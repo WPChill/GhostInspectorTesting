@@ -16,4 +16,4 @@ jobs:
       - name: Verify latest commit and deploy
         run: |
            #Run the update script
-          ./update_website.sh
+           ./update_website.sh
