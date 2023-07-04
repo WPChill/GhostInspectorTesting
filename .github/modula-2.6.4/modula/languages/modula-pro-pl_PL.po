@@ -1,0 +1,1698 @@
+# Copyright (C) 2021 WPChill
+# This file is distributed under the same license as the Modula PRO package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Modula PRO 2.4.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/modula-pro\n"
+"POT-Creation-Date: 2021-02-16 06:51:41+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2021-10-12 19:36+0000\n"
+"Last-Translator: robertlajka.pl\n"
+"Language-Team: Polski\n"
+"Language: pl_PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.3; wp-5.8.1"
+
+#: includes/admin/class-modula-pro-addon.php:118
+msgid "ERROR: There was an error connecting to the server, Please try again."
+msgstr "BŁĄD: Wystąpił błąd podczas łączenia z serwerem. Spróbuj ponownie."
+
+#: includes/admin/class-modula-pro-addon.php:119
+msgid "Installing addon..."
+msgstr "Instalowanie dodatku..."
+
+#: includes/admin/class-modula-pro-addon.php:120
+msgid "Activating addon..."
+msgstr "Aktywowanie dodatków"
+
+#: includes/admin/class-modula-pro-addon.php:121
+msgid "Deactivating addon..."
+msgstr "Dezaktywowanie dodatków..."
+
+#: includes/admin/class-modula-pro-addon.php:122
+msgid "Installing & Activating all addons, please wait.."
+msgstr "Instalacja i Aktywacja wszystkich dodatków, proszę czekać..."
+
+#: includes/admin/class-modula-pro-addon.php:123
+msgid "Deactivating all addons, please wait.."
+msgstr "Dezaktywowanie wszystkich dodatków, proszę czekać..."
+
+#: includes/admin/class-modula-pro-addon.php:124
+msgid "All addons have been installed & activated."
+msgstr "Wszystkie dodatki zostały zainstalowane i aktywowane"
+
+#: includes/admin/class-modula-pro-addon.php:125
+msgid "All addons have been deactivated."
+msgstr "Wszystkie dodatki zostały dezaktywowane."
+
+#: includes/admin/class-modula-pro-addon.php:152
+#: includes/admin/class-modula-pro-addon.php:227
+msgid "Add license"
+msgstr "Dodaj licencję"
+
+#: includes/admin/class-modula-pro-addon.php:219
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: includes/admin/class-modula-pro-addon.php:224
+msgid "Upgrade"
+msgstr "Aktualizuj"
+
+#: includes/admin/class-modula-pro-addon.php:306
+#: includes/admin/class-modula-pro-addon.php:311
+#: includes/admin/class-modula-pro-addon.php:317
+#: includes/admin/class-modula-pro-skin.php:86
+msgid "There was an error installing the addon. Please try again."
+msgstr "Wystąpił błąd podczas instalowania dodatku. Proszę spróbuj ponownie."
+
+#: includes/admin/class-modula-pro-addon.php:390
+#: includes/admin/class-modula-pro-addon.php:416
+msgid "No such addons exists."
+msgstr "Takie dodatki nie istnieją."
+
+#: includes/admin/class-modula-pro-addon.php:398
+msgid "Addon activated"
+msgstr "Dodatki Aktywowane"
+
+#: includes/admin/class-modula-pro-addon.php:424
+msgid "Addon deactivated."
+msgstr "Dodatki Dezaktywowane"
+
+#: includes/admin/class-modula-pro-addon.php:442
+msgid "Install all addons"
+msgstr "Zainstaluj wszystkie dodatki"
+
+#: includes/admin/class-modula-pro-addon.php:443
+msgid "Deactivate all addons"
+msgstr "Dezaktywuj wszystkie dodatki"
+
+#: includes/admin/class-modula-pro-addon.php:448
+msgid "Quick actions"
+msgstr "Szybkie akcje"
+
+#: includes/admin/class-modula-pro-addon.php:456
+msgid "Apply"
+msgstr "Zatwierdź"
+
+#: includes/admin/class-modula-pro-addon.php:476
+msgid "No addons found."
+msgstr "Nie znaleziono dodatków."
+
+#: includes/admin/class-modula-pro-addon.php:494
+msgid "Update now"
+msgstr "Aktualizuj teraz"
+
+#: includes/admin/class-modula-pro-license-activator.php:20
+msgid "No license was found"
+msgstr "Nie znaleziono licencji"
+
+#: includes/admin/class-modula-pro-license-activator.php:58
+#: includes/admin/class-modula-pro-license-activator.php:88
+#: includes/admin/class-modula-pro-license-activator.php:144
+msgid "An error occurred, please try again."
+msgstr "Wystąpił błąd. Proszę spróbować ponownie."
+
+#: includes/admin/class-modula-pro-license-activator.php:66
+msgid "Your license key expired on %s."
+msgstr "Twój klucz licencyjny wygasł %s."
+
+#: includes/admin/class-modula-pro-license-activator.php:72
+msgid "Your license key has been disabled."
+msgstr "Twój klucz licencyjny został wyłączony."
+
+#: includes/admin/class-modula-pro-license-activator.php:75
+msgid "Invalid license."
+msgstr "Nieprawidłowa licencja"
+
+#: includes/admin/class-modula-pro-license-activator.php:79
+msgid "Your license is not active for this URL."
+msgstr "Twoja licencja nie jest aktywna dla tego adresu URL."
+
+#: includes/admin/class-modula-pro-license-activator.php:82
+msgid "This appears to be an invalid license key for %s."
+msgstr "Wygląda na to, że jest to nieprawidłowy klucz licencyjny dla %s"
+
+#: includes/admin/class-modula-pro-license-activator.php:85
+msgid "Your license key has reached its activation limit."
+msgstr "Twój klucz licencyjny osiągnął limit aktywacji."
+
+#: includes/admin/class-modula-pro-license-activator.php:106
+msgid "License activated"
+msgstr "Licencja Aktywowana"
+
+#: includes/admin/class-modula-pro-license-activator.php:159
+msgid "License deactivated"
+msgstr "Licencja dezaktywowana"
+
+#: includes/admin/class-modula-pro-migrate.php:150
+#: includes/admin/class-modula-pro-settings.php:432
+#: includes/admin/class-modula-pro-settings.php:1213
+#: includes/class-modula-pro.php:413
+msgid "Check out this awesome image !!"
+msgstr "Sprawdź ten niesamowity obraz!!"
+
+#: includes/admin/class-modula-pro-migrate.php:151
+msgid ""
+"Here is the link to the image : %%image_link%% and this is the link to the "
+"gallery : %%gallery_link%%"
+msgstr ""
+"Oto link do obrazu: %%image_link%%, a to link do galerii: %%gallery_link%%"
+
+#: includes/admin/class-modula-pro-settings.php:113
+msgid "Activating license. Please wait..."
+msgstr "Aktywacja licencji. Proszę czekać..."
+
+#: includes/admin/class-modula-pro-settings.php:114
+msgid "Deactivating license. Please wait..."
+msgstr "Dezaktywowanie licencji. Proszę czekać..."
+
+#: includes/admin/class-modula-pro-settings.php:155
+#: includes/admin/class-modula-pro-settings.php:193
+msgid "Clear"
+msgstr "Wyczyść"
+
+#: includes/admin/class-modula-pro-settings.php:156
+#: includes/admin/class-modula-pro-settings.php:194
+msgid "Clear color"
+msgstr "Wyczyść kolor"
+
+#: includes/admin/class-modula-pro-settings.php:157
+#: includes/admin/class-modula-pro-settings.php:195
+#: includes/admin/class-modula-pro-settings.php:819
+#: includes/admin/class-modula-pro-settings.php:846
+msgid "Default"
+msgstr "Domyślny"
+
+#: includes/admin/class-modula-pro-settings.php:158
+#: includes/admin/class-modula-pro-settings.php:196
+msgid "Select default color"
+msgstr "Wybierz domyślny kolor"
+
+#: includes/admin/class-modula-pro-settings.php:159
+#: includes/admin/class-modula-pro-settings.php:197
+msgid "Select Color"
+msgstr "Wybierz Kolor"
+
+#: includes/admin/class-modula-pro-settings.php:160
+#: includes/admin/class-modula-pro-settings.php:198
+msgid "Color value"
+msgstr "Wartość koloru"
+
+#: includes/admin/class-modula-pro-settings.php:211
+#: includes/admin/class-modula-pro-settings.php:632
+#: includes/admin/modula-pro-js-templates.php:3
+msgid "Filters"
+msgstr "Filtry"
+
+#: includes/admin/class-modula-pro-settings.php:219
+#: includes/admin/class-modula-pro-settings.php:220
+#: includes/admin/class-modula-pro-settings.php:221
+#: includes/admin/class-modula-pro-settings.php:222
+#: includes/admin/class-modula-pro-settings.php:223
+#: includes/admin/class-modula-pro-settings.php:224
+#: includes/admin/class-modula-pro-settings.php:225
+#: includes/admin/class-modula-pro-settings.php:226
+msgid "not installed"
+msgstr "nie zainstalowany"
+
+#: includes/admin/class-modula-pro-settings.php:246
+msgid "Open lightbox on"
+msgstr "Otwórz lightbox na"
+
+#: includes/admin/class-modula-pro-settings.php:248
+msgid "Select on which devices can the lightbox be open."
+msgstr "Wybierz, na których urządzeniach może być otwarty lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:250
+msgid "Both desktop and mobile"
+msgstr "Komputer i urządzenia mobilne"
+
+#: includes/admin/class-modula-pro-settings.php:251
+msgid "Desktop"
+msgstr "Komputer"
+
+#: includes/admin/class-modula-pro-settings.php:252
+msgid "Mobile"
+msgstr "Urządzenia mobilne"
+
+#: includes/admin/class-modula-pro-settings.php:259
+msgid "Mobile double click"
+msgstr "Podwójne kliknięcie na urządzeniach mobilnych"
+
+#: includes/admin/class-modula-pro-settings.php:261
+msgid ""
+"Enable this so that on mobile view first one click/touch will do the hover "
+"effect and two clicks/touches will open the lightbox."
+msgstr ""
+"Włącz tą opcję, aby w widoku na urządzeniach mobilnych, pojedyncze "
+"kliknięcie/dotyk pokazało efekt najechania, a podwójne kliknięcie/dotknięcie "
+"otworzyło lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:267
+msgid "Loop navigation"
+msgstr "Zapętl przeglądanie"
+
+#: includes/admin/class-modula-pro-settings.php:269
+msgid "Enable this to allow loop navigation inside lightbox."
+msgstr "Włącz tę opcję, aby zapętlić przeglądanie obrazów w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:276
+msgid "Show image title"
+msgstr "Pokaż tytuł obrazu"
+
+#: includes/admin/class-modula-pro-settings.php:278
+msgid "Toggle on to show the image title in the lightbox above the caption."
+msgstr "Włącz tą opcję, aby wyświetlić tytuł obrazu w lightbox, nad podpisem."
+
+#: includes/admin/class-modula-pro-settings.php:285
+msgid "Show image caption"
+msgstr "Pokaż podpis obrazu"
+
+#: includes/admin/class-modula-pro-settings.php:287
+msgid "Toggle on to show the image caption in the lightbox."
+msgstr "Włącz tą opcję, aby wyświetlić podpis obrazu w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:294
+msgid "Title and caption position"
+msgstr "Pozycja tytułu i podpisu"
+
+#: includes/admin/class-modula-pro-settings.php:296
+msgid "Select the position of the caption and title inside the lightbox."
+msgstr "Wybierz pozycję podpisu i tytułu wyświetlaną w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:298
+#: includes/admin/class-modula-pro-settings.php:728
+#: includes/admin/class-modula-pro-settings.php:742
+msgid "Left"
+msgstr "Po lewej"
+
+#: includes/admin/class-modula-pro-settings.php:299
+#: includes/admin/class-modula-pro-settings.php:729
+#: includes/admin/class-modula-pro-settings.php:744
+msgid "Right"
+msgstr "Po prawej"
+
+#: includes/admin/class-modula-pro-settings.php:300
+#: includes/admin/class-modula-pro-settings.php:743
+msgid "Center"
+msgstr "Na środku"
+
+#: includes/admin/class-modula-pro-settings.php:311
+msgid "Keyboard navigation"
+msgstr "Nawigacja za pomocą klawiatury"
+
+#: includes/admin/class-modula-pro-settings.php:314
+msgid "Enable or disable keyboard navigation inside lightbox."
+msgstr "Włącz lub wyłącz nawigację za pomocą klawiatury w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:319
+msgid "Mousewheel navigation"
+msgstr "Nawigacja kółkiem myszy"
+
+#: includes/admin/class-modula-pro-settings.php:322
+msgid "Enable or disable mousewheel navigation inside lightbox."
+msgstr "Włącz lub wyłącz nawigację kółkiem myszy w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:327
+msgid "Toolbar"
+msgstr "Pasek narzędzi"
+
+#: includes/admin/class-modula-pro-settings.php:330
+msgid ""
+"Display the toolbar which contains the action buttons on top right corner."
+msgstr ""
+"Wyświetl pasek narzędzi zawierający przyciski akcji w prawym górnym rogu."
+
+#: includes/admin/class-modula-pro-settings.php:335
+msgid "Close button"
+msgstr "Przycisk zamykania"
+
+#: includes/admin/class-modula-pro-settings.php:338
+msgid "Show or hide close button in lightbox toolbar."
+msgstr "Pokaż lub ukryj przycisk zamykania na pasku narzędzi w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:344
+msgid "Thumbnails button"
+msgstr "Przycisk miniatur"
+
+#: includes/admin/class-modula-pro-settings.php:347
+msgid "Show or hide thumbnails button in lightbox toolbar."
+msgstr "Pokaż lub ukryj przycisk miniatur na pasku narzędzi w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:353
+msgid "Download button"
+msgstr "Przycisk pobierania"
+
+#: includes/admin/class-modula-pro-settings.php:356
+msgid "Show or hide download button in lightbox toolbar."
+msgstr "Pokaż lub ukryj przycisk pobierania na pasku narzędzi w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:362
+msgid "Zoom button"
+msgstr "Przycisk powiększania"
+
+#: includes/admin/class-modula-pro-settings.php:365
+msgid "Show or hide zoom button in lightbox toolbar."
+msgstr "Pokaż lub ukryj przycisk powiększenia na pasku narzędzi w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:371
+msgid "Share button"
+msgstr "Przycisk udostępniania"
+
+#: includes/admin/class-modula-pro-settings.php:374
+msgid "Show or hide share button in lightbox toolbar."
+msgstr "Pokaż lub ukryj przycisk udostępniania na pasku narzędzi w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:380
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/admin/class-modula-pro-settings.php:383
+msgid "Enables Facebook social sharing in FancyBox lightbox."
+msgstr ""
+"Włącza ikonę udostępniania społecznościowego na Facebooku w FancyBox, "
+"wewnątrz lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:389
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/admin/class-modula-pro-settings.php:392
+msgid "Enables Twitter social sharing in FancyBox lightbox."
+msgstr ""
+"Włącza ikonę udostępniania społecznościowego na Twiterze w FancyBox, "
+"wewnątrz lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:397
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: includes/admin/class-modula-pro-settings.php:400
+msgid "Enables Pinterest social sharing in FancyBox lightbox."
+msgstr ""
+"Włącza ikonę udostępniania społecznościowego na Pinterest w FancyBox, "
+"wewnątrz lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:405
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: includes/admin/class-modula-pro-settings.php:408
+msgid "Enables WhatsApp social sharing in FancyBox lightbox."
+msgstr ""
+"Włącza ikonę udostępniania społecznościowego na WhatsApp w FancyBox, "
+"wewnątrz lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:413
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: includes/admin/class-modula-pro-settings.php:416
+msgid "Enables LinkedIn social sharing in FancyBox lightbox."
+msgstr ""
+"Włącza ikonę udostępniania społecznościowego na LinkedIn w FancyBox, "
+"wewnątrz lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:422
+msgid "Email"
+msgstr "Mail"
+
+#: includes/admin/class-modula-pro-settings.php:425
+msgid "Enables Email sharing in FancyBox lightbox."
+msgstr "Włącza ikonę udostępniania przez mail w FancyBox, wewnątrz lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:430
+msgid "Email subject"
+msgstr "Temat emaila"
+
+#: includes/admin/class-modula-pro-settings.php:433
+msgid "Email subject text, used in Lightbox social sharing"
+msgstr "Tekst tematu e-maila używany w udostępnianiu społecznościowym Lightbox"
+
+#: includes/admin/class-modula-pro-settings.php:438
+msgid "Email message"
+msgstr "Wiadomość mail"
+
+#: includes/admin/class-modula-pro-settings.php:441
+msgid "Image Link"
+msgstr "Link do obrazu"
+
+#: includes/admin/class-modula-pro-settings.php:442
+msgid "Gallery Link"
+msgstr "Link do galerii"
+
+#: includes/admin/class-modula-pro-settings.php:444
+#: includes/admin/class-modula-pro-settings.php:1214
+#: includes/class-modula-pro.php:419
+msgid ""
+"Here is the link to the image : %%image_link%% and this is the link to the "
+"gallery : %%gallery_link%% "
+msgstr ""
+"Oto link do obrazu: %%image_link%%, a to link do galerii: %%gallery_link%%"
+
+#: includes/admin/class-modula-pro-settings.php:445
+msgid "Text for message body, used in Lightbox social sharing"
+msgstr "Treść wiadomości używanej w udostępnianiu społecznościowym Lightbox"
+
+#: includes/admin/class-modula-pro-settings.php:451
+msgid "Close on slide click"
+msgstr "Zamknij po kliknięciu poza slajdem"
+
+#: includes/admin/class-modula-pro-settings.php:454
+msgid "Close the slide if user clicks on slide( not image )."
+msgstr "Zamknij obraz, jeśli użytkownik kliknie poza slajdem (nie na obrazie)."
+
+#: includes/admin/class-modula-pro-settings.php:459
+msgid "Close on slide double click"
+msgstr "Zamknij po dwukrotnym kliknięciu poza slajdem"
+
+#: includes/admin/class-modula-pro-settings.php:462
+msgid "Close the slide if user double clicks on slide( not image )."
+msgstr ""
+"Zamknij obraz, jeśli użytkownik dwukrotnie kliknie poza slajdem (nie na "
+"obrazie)."
+
+#: includes/admin/class-modula-pro-settings.php:467
+msgid "Infobar"
+msgstr "Licznik zdjęć"
+
+#: includes/admin/class-modula-pro-settings.php:470
+msgid "Display the counter at the top left corner."
+msgstr "Wyświetl licznik w lewym górnym rogu."
+
+#: includes/admin/class-modula-pro-settings.php:475
+msgid "Open/Close animation"
+msgstr "Animacja otwierania/zamykania"
+
+#: includes/admin/class-modula-pro-settings.php:479
+#: includes/admin/class-modula-pro-settings.php:502
+#: includes/admin/class-modula-pro-settings.php:1046
+msgid "None"
+msgstr "Nic"
+
+#: includes/admin/class-modula-pro-settings.php:480
+msgid "Zoom"
+msgstr "Powiększanie"
+
+#: includes/admin/class-modula-pro-settings.php:481
+#: includes/admin/class-modula-pro-settings.php:503
+msgid "Fade"
+msgstr "Zanikanie"
+
+#: includes/admin/class-modula-pro-settings.php:482
+#: includes/admin/class-modula-pro-settings.php:507
+msgid "Zoom-in-out"
+msgstr "Powiększenie poza"
+
+#: includes/admin/class-modula-pro-settings.php:484
+msgid "Choose the open/close animation effect of the lightbox."
+msgstr "Wybierz efekt animacji otwierania/zamykania lightboxa."
+
+#: includes/admin/class-modula-pro-settings.php:489
+msgid "Open/Close animation speed"
+msgstr "Szybkość animacji otwierania/zamykania"
+
+#: includes/admin/class-modula-pro-settings.php:492
+msgid ""
+"Enter how long the duration of the open/close lightbox animation should last "
+"in ms."
+msgstr "Wpisz, jak długo ma trwać animacja otwierania/zamykania lightbox w ms."
+
+#: includes/admin/class-modula-pro-settings.php:498
+msgid "Transition effect"
+msgstr "Efekt przejścia"
+
+#: includes/admin/class-modula-pro-settings.php:504
+msgid "Slide"
+msgstr "Ślizganie"
+
+#: includes/admin/class-modula-pro-settings.php:505
+msgid "Circular"
+msgstr "Okrągły"
+
+#: includes/admin/class-modula-pro-settings.php:506
+msgid "Tube"
+msgstr "Tuba"
+
+#: includes/admin/class-modula-pro-settings.php:508
+#: includes/admin/class-modula-pro-settings.php:859
+msgid "Rotate"
+msgstr "Obrót"
+
+#: includes/admin/class-modula-pro-settings.php:510
+msgid "Choose the lightbox transition effect between slides."
+msgstr "Wybierz efekt przejścia między slajdami w lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:515
+msgid "Transition speed"
+msgstr "Szybkość przejścia"
+
+#: includes/admin/class-modula-pro-settings.php:518
+msgid ""
+"Enter the desired duration in ms for transition animation of the slides."
+msgstr "Wprowadź żądany czas trwania w ms, dla animacji przejścia slajdów."
+
+#: includes/admin/class-modula-pro-settings.php:524
+msgid "Show all images"
+msgstr "Pokaż wszystkie obrazy"
+
+#: includes/admin/class-modula-pro-settings.php:527
+msgid "Toggle ON to show all images"
+msgstr "Włącz, aby wyświetlić wszystkie obrazy"
+
+#: includes/admin/class-modula-pro-settings.php:532
+msgid "Allow swiping "
+msgstr "Zezwól na przesuwanie"
+
+#: includes/admin/class-modula-pro-settings.php:535
+msgid "Allow panning/swiping"
+msgstr "Zezwalaj na przesuwanie myszką/przesuwanie palcem"
+
+#: includes/admin/class-modula-pro-settings.php:540
+msgid "Auto start thumbnails "
+msgstr "Pokaż miniatury"
+
+#: includes/admin/class-modula-pro-settings.php:543
+msgid "Display thumbnails on lightbox opening."
+msgstr "Wyświetlaj miniatury po otwarciu lightbox."
+
+#: includes/admin/class-modula-pro-settings.php:548
+msgid "Thumb axis "
+msgstr "Oś miniatur"
+
+#: includes/admin/class-modula-pro-settings.php:552
+msgid "Vertical Scrolling"
+msgstr "Przewijanie w pionie"
+
+#: includes/admin/class-modula-pro-settings.php:553
+msgid "Horizontal Scrolling"
+msgstr "Przewijanie w poziomie"
+
+#: includes/admin/class-modula-pro-settings.php:555
+msgid "Select vertical or horizontal scrolling for thumbnails."
+msgstr "Wybierz przewijanie w pionie lub poziomie dla miniatur."
+
+#: includes/admin/class-modula-pro-settings.php:560
+msgid "Thumbnails at bottom "
+msgstr "Miniatury na dole"
+
+#: includes/admin/class-modula-pro-settings.php:563
+msgid ""
+"Place the thumbnails at the bottom of the lightbox. This will automatically "
+"put `y` axis for thumbnails."
+msgstr ""
+"Umieść miniatury na dole lightbox. Spowoduje to automatyczne umieszczenie "
+"osi „y” dla miniatur."
+
+#: includes/admin/class-modula-pro-settings.php:568
+msgid "Caption overlap"
+msgstr "Nakładanie napisów"
+
+#: includes/admin/class-modula-pro-settings.php:571
+msgid ""
+"Toggle ON to allow caption to overlap the lightbox image/content. If toggled "
+"OFF, caption will overlap the lightbox image/content and will dissapear when "
+"mouse out or not moving."
+msgstr ""
+"Włącz, aby napisy nakładały się na obraz/treść w lightbox. Jeśli opcja jest "
+"wyłączona, napisy będą nakładać się na obraz/treść lightbox i znikać po "
+"odsunięciu myszy lub w bezruchu."
+
+#: includes/admin/class-modula-pro-settings.php:576
+msgid "Mobile caption overlap"
+msgstr "Nakładanie napisów na urządzeniach mobilnych"
+
+#: includes/admin/class-modula-pro-settings.php:579
+msgid ""
+"Toggle ON to allow caption to overlap the lightbox image/content in mobile "
+"versions of the website. If toggled OFF, caption will overlap the lightbox "
+"image/content and will dissapear when mouse out or not moving."
+msgstr ""
+"Włącz, aby umożliwić nakładanie napisów na obraz/treść lightbox w mobilnych "
+"wersjach witryny. Jeśli opcja jest wyłączona, napisy będą nakładać się na "
+"obraz/treść lightbox i znikać po odsunięciu myszy lub w bezruchu."
+
+#: includes/admin/class-modula-pro-settings.php:584
+msgid "Copy caption on double tap"
+msgstr "Skopiuj podpis po dwukrotnym dotknięciu"
+
+#: includes/admin/class-modula-pro-settings.php:587
+msgid ""
+"Toggle ON to allow the caption to be copied on double tap when user views "
+"gallery on mobile devices such as smartphones and tablets."
+msgstr ""
+"Włącz, aby umożliwić kopiowanie podpisów po dwukrotnym dotknięciu, gdy "
+"użytkownik przegląda galerię na urządzeniach mobilnych, takich jak smartfony "
+"i tablety."
+
+#: includes/admin/class-modula-pro-settings.php:592
+msgid "Lightbox background color"
+msgstr "Kolor tła lightbox"
+
+#: includes/admin/class-modula-pro-settings.php:595
+msgid "Set the lightbox background color"
+msgstr "Ustaw kolor tła lightbox"
+
+#: includes/admin/class-modula-pro-settings.php:601
+msgid "Lightbox active colors"
+msgstr "Aktywne kolory Lightbox"
+
+#: includes/admin/class-modula-pro-settings.php:604
+msgid "Set the color for thumbnails borders and progress bar."
+msgstr "Ustaw kolor obramowań miniatur i paska postępu."
+
+#: includes/admin/class-modula-pro-settings.php:612
+msgid "Max Images Count"
+msgstr "Maksymalna liczba obrazów"
+
+#: includes/admin/class-modula-pro-settings.php:615
+#: includes/admin/class-modula-pro-settings.php:624
+msgid "Use 0 to show all images"
+msgstr "Użyj 0 (pozostaw puste), aby wyświetlić wszystkie obrazy"
+
+#: includes/admin/class-modula-pro-settings.php:621
+msgid "Mobile Max Images Count"
+msgstr "Maksymalna liczba obrazów na urządzeniach mobilnych"
+
+#: includes/admin/class-modula-pro-settings.php:637
+msgid "Dropdown Filters"
+msgstr "Filtry rozwijane"
+
+#: includes/admin/class-modula-pro-settings.php:640
+msgid ""
+"Enable this option to change the appereance of your filters to dropdown "
+"filters"
+msgstr "Włącz tę opcję, aby zmienić wygląd filtrów na filtry rozwijane"
+
+#: includes/admin/class-modula-pro-settings.php:644
+msgid "Reload Page On Filter Click"
+msgstr "Odśwież stronę po kliknięciu filtra"
+
+#: includes/admin/class-modula-pro-settings.php:647
+msgid "Choose whether pages reload to sort images when a filter is clicked."
+msgstr ""
+"Wybierz, czy strony są ponownie ładowane w celu sortowania obrazów po "
+"kliknięciu filtru."
+
+#: includes/admin/class-modula-pro-settings.php:651
+msgid "Hide \"All\" filter"
+msgstr "Ukryj filtr „Wszystkie”"
+
+#: includes/admin/class-modula-pro-settings.php:654
+msgid "Choose to show or hide the “All” filter."
+msgstr "Wybierz, aby pokazać lub ukryć filtr „Wszystkie”."
+
+#: includes/admin/class-modula-pro-settings.php:658
+msgid "Text For \"All\" filter"
+msgstr "Tekst dla filtra „Wszystkie”"
+
+#: includes/admin/class-modula-pro-settings.php:660
+#: includes/admin/class-modula-pro-settings.php:1163
+#: includes/modula-pro-helper-functions.php:183
+msgid "All"
+msgstr "Wszystkie"
+
+#: includes/admin/class-modula-pro-settings.php:661
+msgid ""
+"Set the label you want to use for the “All” filter that will contain all the "
+"images in your gallery."
+msgstr ""
+"Ustaw etykietę, której chcesz użyć dla filtra „Wszystkie”, który będzie "
+"zawierał wszystkie obrazy w Twojej galerii."
+
+#: includes/admin/class-modula-pro-settings.php:666
+msgid "Filter link style"
+msgstr "Styl linku filtru"
+
+#: includes/admin/class-modula-pro-settings.php:669
+msgid "Default style"
+msgstr "Domyślny styl"
+
+#: includes/admin/class-modula-pro-settings.php:670
+msgid "Antonio"
+msgstr "Antonio"
+
+#: includes/admin/class-modula-pro-settings.php:671
+msgid "Ariel"
+msgstr "Ariel"
+
+#: includes/admin/class-modula-pro-settings.php:672
+msgid "Caliban"
+msgstr "Caliban"
+
+#: includes/admin/class-modula-pro-settings.php:673
+msgid "Ceres"
+msgstr "Ceres"
+
+#: includes/admin/class-modula-pro-settings.php:674
+msgid "Cordelia"
+msgstr "Cordelia"
+
+#: includes/admin/class-modula-pro-settings.php:675
+msgid "Ferdinand"
+msgstr "Ferdinand"
+
+#: includes/admin/class-modula-pro-settings.php:676
+msgid "Francisco"
+msgstr "Francisco"
+
+#: includes/admin/class-modula-pro-settings.php:677
+msgid "Horatio"
+msgstr "Horatio"
+
+#: includes/admin/class-modula-pro-settings.php:678
+msgid "Invulner"
+msgstr "Niewrażliwy"
+
+#: includes/admin/class-modula-pro-settings.php:679
+msgid "Iris"
+msgstr "Iris"
+
+#: includes/admin/class-modula-pro-settings.php:681
+msgid "Juno"
+msgstr "Juno"
+
+#: includes/admin/class-modula-pro-settings.php:682
+msgid "Luce"
+msgstr "Luce"
+
+#: includes/admin/class-modula-pro-settings.php:683
+msgid "Maria"
+msgstr "Maria"
+
+#: includes/admin/class-modula-pro-settings.php:684
+msgid "Miranda"
+msgstr "Miranda"
+
+#: includes/admin/class-modula-pro-settings.php:685
+msgid "Prospero"
+msgstr "Prospero"
+
+#: includes/admin/class-modula-pro-settings.php:686
+msgid "Sebastian"
+msgstr "Sebastian"
+
+#: includes/admin/class-modula-pro-settings.php:687
+msgid "Shylock"
+msgstr "Shylock"
+
+#: includes/admin/class-modula-pro-settings.php:688
+msgid "Stephano"
+msgstr "Stephano"
+
+#: includes/admin/class-modula-pro-settings.php:689
+msgid "Tantalid"
+msgstr "Tantalid"
+
+#: includes/admin/class-modula-pro-settings.php:690
+msgid "Trinculo"
+msgstr "Trinculo"
+
+#: includes/admin/class-modula-pro-settings.php:691
+msgid "Valentine"
+msgstr "Valentine"
+
+#: includes/admin/class-modula-pro-settings.php:692
+msgid "Viola"
+msgstr "Viola"
+
+#: includes/admin/class-modula-pro-settings.php:695
+msgid "Choose the style for the filter links you want to use."
+msgstr "Wybierz styl linków filtrów, których chcesz użyć."
+
+#: includes/admin/class-modula-pro-settings.php:699
+msgid "Filter link color"
+msgstr "Kolor linku filtra"
+
+#: includes/admin/class-modula-pro-settings.php:703
+msgid "Choose the color for filter links you want to use"
+msgstr "Wybierz kolor linków filtrów, których chcesz użyć"
+
+#: includes/admin/class-modula-pro-settings.php:707
+msgid "Filter link hover color"
+msgstr "Kolor efektu najechania linku filtra"
+
+#: includes/admin/class-modula-pro-settings.php:711
+msgid "Choose the color for filter hover links you want to use"
+msgstr "Wybierz kolor linków po najechaniu na filtr, których chcesz użyć"
+
+#: includes/admin/class-modula-pro-settings.php:715
+msgid "Default active filter"
+msgstr "Domyślny aktywny filtr"
+
+#: includes/admin/class-modula-pro-settings.php:719
+msgid ""
+"Type a default active filter on which the gallery should start. It should "
+"not contain \",\" , \".\""
+msgstr ""
+"Wpisz domyślny aktywny filtr, od którego powinna się uruchamiać galeria. Nie "
+"powinien zawierać znaków \",\" , \".\""
+
+#: includes/admin/class-modula-pro-settings.php:723
+msgid "Filter positioning"
+msgstr "Pozycja filtra"
+
+#: includes/admin/class-modula-pro-settings.php:726
+msgid "Top"
+msgstr "U góry"
+
+#: includes/admin/class-modula-pro-settings.php:727
+msgid "Bottom"
+msgstr "Na dole"
+
+#: includes/admin/class-modula-pro-settings.php:730
+msgid "Top & Bottom"
+msgstr "U góry i na dole"
+
+#: includes/admin/class-modula-pro-settings.php:731
+msgid "Left & Right"
+msgstr "Po lewej i po prawej"
+
+#: includes/admin/class-modula-pro-settings.php:734
+msgid "Choose the position of the filters"
+msgstr "Wybierz pozycję filtrów"
+
+#: includes/admin/class-modula-pro-settings.php:738
+msgid "Filters Text Align"
+msgstr "Wyrównanie tekstu filtrów"
+
+#: includes/admin/class-modula-pro-settings.php:741
+msgid "Inherit"
+msgstr "Dziedziczenie"
+
+#: includes/admin/class-modula-pro-settings.php:747
+msgid "None will inherit from the theme."
+msgstr "Żaden nie dziedziczy z motywu."
+
+#: includes/admin/class-modula-pro-settings.php:751
+msgid "Collapsible Filters"
+msgstr "Filtry zwijane"
+
+#: includes/admin/class-modula-pro-settings.php:754
+msgid "Check to enable Collapsible Filters (available only on mobile)."
+msgstr ""
+"Zaznacz, aby włączyć filtry zwijane (dostępne tylko na urządzeniach "
+"mobilnych)."
+
+#: includes/admin/class-modula-pro-settings.php:759
+msgid "Collapsible Action Text"
+msgstr "Zwijany tekst akcji"
+
+#: includes/admin/class-modula-pro-settings.php:761
+#: includes/admin/class-modula-pro-settings.php:1189
+msgid "Filter by"
+msgstr "Filtruj według"
+
+#: includes/admin/class-modula-pro-settings.php:762
+msgid "Text used for Collapsible Action button."
+msgstr "Tekst używany do przycisku akcji zwijanej."
+
+#: includes/admin/class-modula-pro-settings.php:767
+msgid "Mobile Dropdown Filters"
+msgstr "Filtry rozwijane na urządzeniach mobilnych"
+
+#: includes/admin/class-modula-pro-settings.php:770
+msgid "Check to enable Dropdown Filters on mobile only."
+msgstr "Zaznacz, aby włączyć filtry rozwijane tylko na urządzeniach mobilnych."
+
+#: includes/admin/class-modula-pro-settings.php:776
+msgid "Show Gallery Title "
+msgstr "Pokaż tytuł galerii"
+
+#: includes/admin/class-modula-pro-settings.php:779
+msgid "Enable this to show the title of your gallery."
+msgstr "Włącz tę opcję, aby wyświetlić tytuł swojej galerii."
+
+#: includes/admin/class-modula-pro-settings.php:785
+msgid "Title type "
+msgstr "Typ tytułu"
+
+#: includes/admin/class-modula-pro-settings.php:789
+msgid "Paragraph"
+msgstr "Paragraf"
+
+#: includes/admin/class-modula-pro-settings.php:790
+msgid "Heading 1"
+msgstr "Nagłówek 1"
+
+#: includes/admin/class-modula-pro-settings.php:791
+msgid "Heading 2"
+msgstr "Nagłówek 2"
+
+#: includes/admin/class-modula-pro-settings.php:792
+msgid "Heading 3"
+msgstr "Nagłówek 3"
+
+#: includes/admin/class-modula-pro-settings.php:793
+msgid "Heading 4"
+msgstr "Nagłówek 4"
+
+#: includes/admin/class-modula-pro-settings.php:794
+msgid "Heading 5"
+msgstr "Nagłówek 5"
+
+#: includes/admin/class-modula-pro-settings.php:795
+msgid "Heading 6"
+msgstr "Nagłówek 6"
+
+#: includes/admin/class-modula-pro-settings.php:797
+msgid "Choose what kind of wrapper should the gallery title have."
+msgstr "Wybierz, jaki rodzaj obwoluty powinien mieć tytuł galerii."
+
+#: includes/admin/class-modula-pro-settings.php:804
+msgid "Title Font"
+msgstr "Czcionka tytułu"
+
+#: includes/admin/class-modula-pro-settings.php:806
+msgid "Set the font family of your title."
+msgstr "Ustaw rodzinę czcionek dla swojego tytułu."
+
+#: includes/admin/class-modula-pro-settings.php:815
+msgid "Title Font Weight"
+msgstr "Grubość czcionki tytułu"
+
+#: includes/admin/class-modula-pro-settings.php:817
+msgid "Set the font weight of your title."
+msgstr "Ustaw grubość czcionki w tytule."
+
+#: includes/admin/class-modula-pro-settings.php:820
+#: includes/admin/class-modula-pro-settings.php:847
+msgid "Light"
+msgstr "Jasny"
+
+#: includes/admin/class-modula-pro-settings.php:821
+#: includes/admin/class-modula-pro-settings.php:848
+msgid "Regular"
+msgstr "Regularny"
+
+#: includes/admin/class-modula-pro-settings.php:822
+#: includes/admin/class-modula-pro-settings.php:849
+msgid "Bold"
+msgstr "Pogrubienie"
+
+#: includes/admin/class-modula-pro-settings.php:831
+msgid "Captions Font"
+msgstr "Czcionka podpisów"
+
+#: includes/admin/class-modula-pro-settings.php:833
+msgid "Set the font family of your captions."
+msgstr "Ustaw rodzinę czcionek dla swoich podpisów."
+
+#: includes/admin/class-modula-pro-settings.php:842
+msgid "Captions Font Style"
+msgstr "Styl czcionki podpisów"
+
+#: includes/admin/class-modula-pro-settings.php:844
+msgid "Set the font style of your captions."
+msgstr "Ustaw styl czcionki podpisów."
+
+#: includes/admin/class-modula-pro-settings.php:860
+msgid ""
+"To add a rotate effect set this value to positive for counter-clockwise "
+"rotations and negative for clockwise rotations."
+msgstr ""
+"Aby dodać efekt obracania, ustaw tę wartość na dodatnią dla obrotów w "
+"kierunku przeciwnym do ruchu wskazówek zegara i ujemną dla obrotów zgodnych "
+"z ruchem wskazówek zegara."
+
+#: includes/admin/class-modula-pro-settings.php:868
+msgid "Horizontal Slide"
+msgstr "Przesuwanie w poziomie"
+
+#: includes/admin/class-modula-pro-settings.php:869
+msgid ""
+"Set this to a negative value if you want your gallery’s image to slide in "
+"from the left or to positive if you would prefer for them to slide in from "
+"the right."
+msgstr ""
+"Ustaw to na wartość ujemną, jeśli chcesz, aby obraz galerii przesuwał się od "
+"lewej lub na dodatni, jeśli wolisz aby przesuwał się od prawej."
+
+#: includes/admin/class-modula-pro-settings.php:877
+msgid "Vertical Slide"
+msgstr "Przesuwanie w pionie"
+
+#: includes/admin/class-modula-pro-settings.php:878
+msgid ""
+"Set this to a negative value if you want your gallery’s image to slide in "
+"from the top or to positive if you would prefer for them to slide in from "
+"the bottom."
+msgstr ""
+"Ustaw to na wartość ujemną, jeśli chcesz, aby obraz galerii przesuwał się od "
+"góry lub na dodatnią, jeśli wolisz aby przesuwał się od dołu."
+
+#: includes/admin/class-modula-pro-settings.php:893
+#: includes/admin/class-modula-pro-settings.php:1032
+msgid "Pointer"
+msgstr "Wskaźnik"
+
+#: includes/admin/class-modula-pro-settings.php:894
+#: includes/admin/class-modula-pro-settings.php:1033
+msgid "Magnifying Glass"
+msgstr "Szkło powiększające"
+
+#: includes/admin/class-modula-pro-settings.php:895
+#: includes/admin/class-modula-pro-settings.php:1034
+msgid "Loading"
+msgstr "Ładowanie"
+
+#: includes/admin/class-modula-pro-settings.php:896
+#: includes/admin/class-modula-pro-settings.php:1035
+msgid "Cell"
+msgstr "Plus"
+
+#: includes/admin/class-modula-pro-settings.php:897
+#: includes/admin/class-modula-pro-settings.php:1036
+msgid "Crosshair"
+msgstr "Celownik"
+
+#: includes/admin/class-modula-pro-settings.php:898
+msgid "Resize 1"
+msgstr "Rozszerzenie 1"
+
+#: includes/admin/class-modula-pro-settings.php:899
+msgid "Resize 2"
+msgstr "Rozszerzenie 2"
+
+#: includes/admin/class-modula-pro-settings.php:900
+msgid "Custom"
+msgstr "Wybierz"
+
+#: includes/admin/class-modula-pro-settings.php:906
+msgid "Upload your cursor"
+msgstr "Prześlij własny kursor"
+
+#: includes/admin/class-modula-pro-settings.php:909
+msgid ""
+"The cursor size has to be 128px x 128px or smaller , otherwise the cursor "
+"will not work ."
+msgstr ""
+"Rozmiar kursora musi wynosić 128px x 128px lub mniej, w przeciwnym razie "
+"kursor nie będzie działał."
+
+#: includes/admin/class-modula-pro-settings.php:911
+msgid "Upload Cursor"
+msgstr "Prześlij kursor"
+
+#: includes/admin/class-modula-pro-settings.php:918
+msgid "Hover Color"
+msgstr "Kolor efektu najechania"
+
+#: includes/admin/class-modula-pro-settings.php:925
+msgid "Hover Opacity"
+msgstr "Przezroczystość efektu najechania"
+
+#: includes/admin/class-modula-pro-settings.php:926
+msgid "Adjust the transparency of your chosen hover effect."
+msgstr "Dostosuj przezroczystość wybranego efektu najechania."
+
+#: includes/admin/class-modula-pro-settings.php:935
+msgid ""
+"You can combine images that open in lightbox with images that open URL by "
+"completing the image URL field from Edit Image settings."
+msgstr ""
+"Możesz łączyć obrazy otwierane w Lightbox z obrazami otwierającymi adres URL,"
+" wypełniając pole adresu URL obrazu w ustawieniach edycji obrazu."
+
+#: includes/admin/class-modula-pro-settings.php:943
+msgid ""
+"In order to add videos to your gallery you'll need to install the extension "
+"Modula Video from %shere%s."
+msgstr ""
+"Aby dodać filmy do swojej galerii, musisz zainstalować rozszerzenie Modula "
+"Video %stąd%s."
+
+#: includes/admin/class-modula-pro-settings.php:953
+msgid ""
+"By installing the Modula Speed UP extension, you'll benefit from unlimited "
+"image optimization through ShortPixel's servers as well as unlimited CDN "
+"image delivery through StackPath. You'll need to install the extension "
+"Modula Speed Up from %shere%s."
+msgstr ""
+"Instalując rozszerzenie Modula Speed ​​UP, zyskasz nieograniczoną "
+"optymalizację obrazu za pośrednictwem serwerów ShortPixel, a także "
+"nieograniczone dostarczanie obrazu CDN za pośrednictwem StackPath. Musisz "
+"zainstalować rozszerzenie Modula Speed ​​Up z %tąd%s."
+
+#: includes/admin/class-modula-pro-settings.php:963
+msgid ""
+"In order to extend deeplink functionality or add right click protection to "
+"your galleries you'll need to install the extensions Modula Deeplink and "
+"Modula Protection from %shere%s."
+msgstr ""
+"Aby rozszerzyć funkcjonalność deeplink lub dodać ochronę prawego kliknięcia "
+"do swoich galerii, musisz zainstalować rozszerzenia Modula Deeplink i Modula "
+"Protection z %tutaj%s."
+
+#: includes/admin/class-modula-pro-settings.php:973
+msgid ""
+"In order to extend deeplink functionality to your galleries you'll need to "
+"install the extension Modula Deeplink from %shere%s."
+msgstr ""
+"Aby rozszerzyć funkcjonalność deeplink na swoje galerie, musisz zainstalować "
+"rozszerzenie Modula Deeplink z %stąd%s."
+
+#: includes/admin/class-modula-pro-settings.php:983
+msgid ""
+"In order to add right click protection to your galleries you'll need to "
+"install the extension Modula Protection from %shere%s."
+msgstr ""
+"Aby dodać ochronę prawego kliknięcia do swoich galerii, musisz zainstalować "
+"rozszerzenie Modula Protection z %tutaj%s."
+
+#: includes/admin/class-modula-pro-settings.php:993
+msgid ""
+"In order to add watermark to your image galleries you'll need to install the "
+"extension Modula Watermark from %shere%s."
+msgstr ""
+"Aby dodać znak wodny do galerii obrazów, musisz zainstalować rozszerzenie "
+"Modula Watermark %stąd%s."
+
+#: includes/admin/class-modula-pro-settings.php:1003
+msgid ""
+"In order to add password protection to your galleries you'll need to install "
+"the extension Modula Password Protect from %shere%s."
+msgstr ""
+"Aby dodać ochronę hasłem do swoich galerii, musisz zainstalować rozszerzenie "
+"Modula Password Protect %stąd%s."
+
+#: includes/admin/class-modula-pro-settings.php:1013
+msgid ""
+"In order to create slideshows within your galleries you'll need to install "
+"the extension Modula Slideshow from %shere%s."
+msgstr ""
+"Aby tworzyć pokazy slajdów w swoich galeriach, musisz zainstalować "
+"rozszerzenie Modula Slideshow %stąd%s."
+
+#: includes/admin/class-modula-pro-settings.php:1037
+msgid "Zoom In 1"
+msgstr "Zbliżenie 1"
+
+#: includes/admin/class-modula-pro-settings.php:1038
+msgid "Zoom In 2"
+msgstr "Zbliżenie 2"
+
+#: includes/admin/class-modula-pro-settings.php:1047
+msgid "1. Greyscale"
+msgstr "1. Skala szarości"
+
+#: includes/admin/class-modula-pro-settings.php:1048
+msgid "2. Under Image"
+msgstr "2. Pod obrazem"
+
+#: includes/admin/class-modula-pro-settings.php:1049
+msgid "3. Pufrobo"
+msgstr "3. Pufrobo"
+
+#: includes/admin/class-modula-pro-settings.php:1050
+msgid "4. Hide"
+msgstr "4. Ukryj"
+
+#: includes/admin/class-modula-pro-settings.php:1051
+msgid "5. Quiet"
+msgstr "5. Cisza"
+
+#: includes/admin/class-modula-pro-settings.php:1052
+msgid "6. Catinelle"
+msgstr "6. Catinelle"
+
+#: includes/admin/class-modula-pro-settings.php:1053
+msgid "7. Reflex"
+msgstr "7. Odbicie"
+
+#: includes/admin/class-modula-pro-settings.php:1054
+msgid "8. Curtain"
+msgstr "8. Kurtyna"
+
+#: includes/admin/class-modula-pro-settings.php:1055
+msgid "9. Lens"
+msgstr "9. Obiektyw"
+
+#: includes/admin/class-modula-pro-settings.php:1056
+msgid "10. Appear"
+msgstr "10. Pojawianie się"
+
+#: includes/admin/class-modula-pro-settings.php:1057
+msgid "11. Crafty"
+msgstr "11. Przebiegły"
+
+#: includes/admin/class-modula-pro-settings.php:1058
+msgid "12. Seemo"
+msgstr "12. Seemo"
+
+#: includes/admin/class-modula-pro-settings.php:1059
+msgid "13. Comodo"
+msgstr "13. Comodo"
+
+#: includes/admin/class-modula-pro-settings.php:1060
+msgid "14. Lily"
+msgstr "14. Lily"
+
+#: includes/admin/class-modula-pro-settings.php:1061
+msgid "15. Sadie"
+msgstr "15. Sadie"
+
+#: includes/admin/class-modula-pro-settings.php:1062
+msgid "16. Honey"
+msgstr "16. Honey"
+
+#: includes/admin/class-modula-pro-settings.php:1063
+msgid "17. Layla"
+msgstr "17. Layla"
+
+#: includes/admin/class-modula-pro-settings.php:1064
+msgid "18. Zoe"
+msgstr "18. Zoe"
+
+#: includes/admin/class-modula-pro-settings.php:1065
+msgid "19. Oscar"
+msgstr "19. Oscar"
+
+#: includes/admin/class-modula-pro-settings.php:1066
+msgid "20. Marley"
+msgstr "20. Marley"
+
+#: includes/admin/class-modula-pro-settings.php:1067
+msgid "21. Ruby"
+msgstr "21. Ruby"
+
+#: includes/admin/class-modula-pro-settings.php:1068
+msgid "22. Roxy"
+msgstr "22. Roxy"
+
+#: includes/admin/class-modula-pro-settings.php:1069
+msgid "23. Bubba"
+msgstr "23. Bubba"
+
+#: includes/admin/class-modula-pro-settings.php:1070
+msgid "24. Dexter"
+msgstr "24. Dexter"
+
+#: includes/admin/class-modula-pro-settings.php:1071
+msgid "25. Sarah"
+msgstr "25. Sarah"
+
+#: includes/admin/class-modula-pro-settings.php:1072
+msgid "26. Chico"
+msgstr "26. Chico"
+
+#: includes/admin/class-modula-pro-settings.php:1073
+msgid "27. Milo"
+msgstr "27. Milo"
+
+#: includes/admin/class-modula-pro-settings.php:1074
+msgid "28. Julia"
+msgstr "28. Julia"
+
+#: includes/admin/class-modula-pro-settings.php:1075
+msgid "29. Hera"
+msgstr "29. Hera"
+
+#: includes/admin/class-modula-pro-settings.php:1076
+msgid "30. Winston"
+msgstr "30. Winston"
+
+#: includes/admin/class-modula-pro-settings.php:1077
+msgid "31. Selena"
+msgstr "31. Selena"
+
+#: includes/admin/class-modula-pro-settings.php:1078
+msgid "32. Terry"
+msgstr "32. Terry"
+
+#: includes/admin/class-modula-pro-settings.php:1079
+msgid "33. Phoebe"
+msgstr "33. Phoebe"
+
+#: includes/admin/class-modula-pro-settings.php:1080
+msgid "34. Apollo"
+msgstr "34. Apollo"
+
+#: includes/admin/class-modula-pro-settings.php:1081
+msgid "35. Steve"
+msgstr "35. Steve"
+
+#: includes/admin/class-modula-pro-settings.php:1082
+msgid "36. Jazz"
+msgstr "36. Jazz"
+
+#: includes/admin/class-modula-pro-settings.php:1083
+msgid "37. Ming"
+msgstr "37. Ming"
+
+#: includes/admin/class-modula-pro-settings.php:1084
+msgid "38. Lexi"
+msgstr "38. Lexi"
+
+#: includes/admin/class-modula-pro-settings.php:1085
+msgid "39. Duke"
+msgstr "39. Duke"
+
+#: includes/admin/class-modula-pro-settings.php:1086
+msgid "40. Tilt Effect 1"
+msgstr "40. Efekt pochylenia 1"
+
+#: includes/admin/class-modula-pro-settings.php:1087
+msgid "41. Tilt Effect 2"
+msgstr "41. Efekt pochylenia 2"
+
+#: includes/admin/class-modula-pro-settings.php:1088
+msgid "42. Tilt Effect 3"
+msgstr "42. Efekt pochylenia 3"
+
+#: includes/admin/class-modula-pro-settings.php:1089
+msgid "43. Fluid Up"
+msgstr "43. Fluid Up"
+
+#: includes/admin/class-modula-pro-settings.php:1110
+msgid "Add new filter"
+msgstr "Dodaj nowy filtr"
+
+#: includes/admin/class-modula-pro-settings.php:1149
+msgid "Upload"
+msgstr "Prześlij"
+
+#: includes/admin/class-modula-pro-settings.php:1150
+msgid "Replace"
+msgstr "Zastąp"
+
+#: includes/admin/class-modula-pro-settings.php:1151
+#: includes/admin/modula-pro-js-templates.php:26
+msgid "Delete"
+msgstr "Usuń"
+
+#: includes/admin/class-modula-pro-settings.php:1255
+msgid "Licenses"
+msgstr "Licencje"
+
+#: includes/admin/class-modula-pro-settings.php:1343
+#: includes/admin/modula-pro-js-templates.php:9
+msgid "Bulk Edit"
+msgstr "Edycja zbiorcza"
+
+#: includes/admin/class-modula-pro-settings.php:1374
+msgid "Filter 1"
+msgstr "Filter 1"
+
+#: includes/admin/class-modula-pro-settings.php:1375
+msgid "Filter 2"
+msgstr "Filter 2"
+
+#: includes/admin/class-modula-pro-settings.php:1376
+msgid "Filter 3"
+msgstr "Filter 3"
+
+#: includes/admin/class-modula-pro-settings.php:1380
+msgid "Hover over the links above to see the effect."
+msgstr "Najedź na powyższe linki, aby zobaczyć efekt."
+
+#: includes/admin/class-modula-pro-settings.php:1437
+msgid "Gallery Sorting"
+msgstr "Sortowanie Galerii"
+
+#: includes/admin/class-modula-pro-settings.php:1454
+msgid "Manual"
+msgstr "Ręcznie"
+
+#: includes/admin/class-modula-pro-settings.php:1455
+msgid "Date created - newest first"
+msgstr "Data utworzenia - od najnowszych"
+
+#: includes/admin/class-modula-pro-settings.php:1456
+msgid "Date created - oldest first"
+msgstr "Data utworzenia - od najstarszych"
+
+#: includes/admin/class-modula-pro-settings.php:1457
+msgid "Date modified - most recent first"
+msgstr "Data modyfikacji - najpierw najnowsze"
+
+#: includes/admin/class-modula-pro-settings.php:1458
+msgid "Date modified - most recent last"
+msgstr "Data modyfikacji - najpierw najstarsze"
+
+#: includes/admin/class-modula-pro-settings.php:1459
+msgid "Title alphabetically"
+msgstr "Tytuł alfabetycznie"
+
+#: includes/admin/class-modula-pro-settings.php:1460
+msgid "Title reverse"
+msgstr "Tytuł odwrotnie"
+
+#: includes/admin/class-modula-pro-settings.php:1461
+msgid "Random"
+msgstr "Losowo"
+
+#: includes/admin/class-modula-pro-settings.php:1476
+msgid "Replace Image"
+msgstr "Zastąp obraz"
+
+#: includes/admin/modula-pro-js-templates.php:12
+msgid "Select All"
+msgstr "Zaznacz wszystkie"
+
+#: includes/admin/modula-pro-js-templates.php:13
+msgid "Deselect All"
+msgstr "Odznacz wszystkie"
+
+#: includes/admin/modula-pro-js-templates.php:14
+msgid "Toggle selection"
+msgstr "Odwróć Wybór"
+
+#: includes/admin/modula-pro-js-templates.php:27
+msgid "Save"
+msgstr "Zapisz"
+
+#: includes/admin/modula-pro-js-templates.php:28
+msgid "Save & Close"
+msgstr "Zapisz i Zamknij"
+
+#: includes/admin/modula-pro-js-templates.php:42
+msgid "Deselect"
+msgstr "Odznacz"
+
+#: includes/admin/tabs/license.php:7
+msgid "Enter your license key"
+msgstr "Wprowadź swój klucz licencyjny"
+
+#: includes/admin/tabs/license.php:8
+msgid "Activate your license key"
+msgstr "Aktywuj swój klucz licencyjny"
+
+#: includes/admin/tabs/license.php:9
+msgid "Your license is active until <strong>%s</strong>"
+msgstr "Twoja licencja jest aktywna do <strong>%s</strong>"
+
+#: includes/admin/tabs/license.php:10
+msgid "Your license is active <strong>forever</strong>"
+msgstr "Twoja licencja jest aktywna <strong>na zawsze</strong>"
+
+#: includes/admin/tabs/license.php:20
+msgid "License Key"
+msgstr "Klucz Licencyjny"
+
+#: includes/admin/tabs/license.php:54
+msgid ""
+"You have %s weeks untill your license will expire. Click <a href=\"%s\" "
+"target=\"_blank\">here</a> to extend your license."
+msgstr ""
+"Masz %s tygodni do wygaśnięcia licencji. Kliknij <a href=\"%s\" "
+"target=\"_blank\">tutaj</a>, aby przedłużyć licencję."
+
+#: includes/admin/tabs/license.php:66
+msgid "Action"
+msgstr "Akcja"
+
+#: includes/admin/tabs/license.php:71
+msgid "Deactivate License"
+msgstr "Dezaktywuj licencję"
+
+#: includes/admin/tabs/license.php:74
+msgid "Activate License"
+msgstr "Aktywacja licencji"
+
+#: includes/admin/tabs/license.php:80
+msgid "Use Alternative Server"
+msgstr "Użyj alternatywnego serwera"
+
+#: includes/admin/tabs/license.php:82
+msgid ""
+"Sometimes there can be problems with the activation server, in which case "
+"please try the alternative one."
+msgstr ""
+"Czasami mogą wystąpić problemy z serwerem aktywacji, w takim przypadku "
+"spróbuj alternatywnego serwera."
+
+#: includes/class-modula-pro-gutenberg.php:41
+msgid "Modula Link"
+msgstr "Modula Link"
+
+#: includes/class-modula-pro-gutenberg.php:86
+msgid "Enter your message here"
+msgstr "Wpisz tutaj swoją wiadomość"
+
+#: includes/class-modula-pro.php:134
+msgid "Install & Activate: Modula Lite"
+msgstr "Zainstaluj i aktywuj: Modula Lite"
+
+#: includes/class-modula-pro.php:138
+msgid "Activate: Modula Lite"
+msgstr "Aktywacja: Modula Lite"
+
+#: includes/class-modula-pro.php:155
+msgid "Install & Activate Modula Lite"
+msgstr "Zainstaluj i aktywuj Modula Lite"
+
+#: includes/class-modula-pro.php:156
+msgid ""
+"In order for Modula PRO to work properly, you'll also need to have Modula "
+"Lite installed & activated"
+msgstr ""
+"Aby Modula PRO działała poprawnie, musisz również zainstalować i aktywować "
+"Modula Lite"
+
+#: includes/class-modula-pro.php:199
+msgid ""
+"%sModula Pro%s: No valid license key has been entered, so any installed "
+"Modula Addons have been turned off. %sPlease click here to enter your "
+"license key and begin receiving automatic updates.%s"
+msgstr ""
+"%sModula Pro%s: Nie wprowadzono prawidłowego klucza licencyjnego, więc "
+"wszystkie zainstalowane dodatki Modula zostały wyłączone. %sProszę kliknij "
+"tutaj, aby wprowadzić klucz licencyjny i zacząć otrzymywać automatyczne "
+"aktualizacje.%s"
+
+#: includes/class-modula-pro.php:425
+msgid "Here is the link to the gallery :"
+msgstr "Oto link do galerii:"
+
+#: includes/class-modula-pro.php:936
+msgid "Given ID doesn't belong to a Modula Gallery!"
+msgstr "Podany identyfikator nie należy do Galerii Modula!"
+
+#: includes/class-modula-pro.php:1073 includes/class-modula-pro.php:1083
+msgid "Click here"
+msgstr "Kliknij tutaj"
+
+#: includes/class-modula-pro.php:1076 includes/class-modula-pro.php:1086
+msgid "Copy shortcode"
+msgstr "Skopiuj krótki kod"
+
+#: includes/class-modula-pro.php:1087
+msgid ""
+"You can use this to display your newly created gallery by clicking on a %s "
+"link or image %s "
+msgstr ""
+"Możesz użyć tego kodu, aby wyświetlić swoją nowo utworzoną galerię, przez "
+"kliknięcie na %s link lub obrazek %s "
+
+#: includes/class-modula-pro.php:1121
+msgid "Hover Effects"
+msgstr "Efekty najechania"
+
+#: includes/class-modula-pro.php:1122
+msgid "Check this if you're using hover effects with tilt effect"
+msgstr "Zaznacz to, jeśli używasz efektów najechania z efektem pochylenia"
+
+#: includes/class-modula-pro.php:1129
+msgid "Link Shortcode"
+msgstr "Link krótkie kody"
+
+#: includes/class-modula-pro.php:1130
+msgid "Check this if you're using modula link ( [modula-link] ) shortcode"
+msgstr "Zaznacz to, jeśli używasz linku modula ( [modula-link] ) krótkie kody"
+
+#: includes/class-modula-pro.php:1328
+msgid "PRO Version"
+msgstr "Wersja PRO"
+
+#: includes/class-modula-pro.php:1334
+msgid "License"
+msgstr "Licencja"
+
+#: includes/class-modula-pro.php:1335
+msgid "License inactive"
+msgstr "Licencja nieaktywna"
+
+#: includes/class-modula-pro.php:1340
+msgid "Alternative license server"
+msgstr "Alternatywny serwer licencji"
+
+#: includes/class-modula-pro.php:1341
+msgid "Using alternative license server"
+msgstr "Korzystanie z alternatywnego serwera licencji"
+
+#: includes/class-modula-pro.php:1341
+msgid "Using regular license server"
+msgstr "Korzystanie ze zwykłego serwera licencyjnego"
+
+#: includes/class-modula-pro.php:1346
+msgid "Modula Link everywhere"
+msgstr "Modula Link wszędzie"
+
+#: includes/class-modula-pro.php:1347
+msgid "Enabled"
+msgstr "Włączone"
+
+#: includes/class-modula-pro.php:1347
+msgid "Disabled"
+msgstr "Wyłączone"
+
+#: includes/updater/class-modula-pro-base-updater.php:225
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s."
+msgstr ""
+"Dostępna jest nowa wersja %1$s. %2$sWyświetl szczegóły wersji %3$s%4$s."
+
+#: includes/updater/class-modula-pro-base-updater.php:233
+msgid ""
+"There is a new version of %1$s available. %2$sView version %3$s details%4$s "
+"or %5$supdate now%6$s."
+msgstr ""
+"\n"
+"Comments:\n"
+"Loco Translate is powered by Locov2.5.3\n"
+
+#: includes/updater/class-modula-pro-base-updater.php:466
+msgid "You do not have permission to install plugin updates"
+msgstr "Nie masz uprawnień do instalowania aktualizacji wtyczek"
+
+#: includes/updater/class-modula-pro-base-updater.php:466
+msgid "Error"
+msgstr "Błąd"
+
+#. Plugin Name of the plugin/theme
+msgid "Modula PRO"
+msgstr "Modula PRO"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wp-modula.com/"
+msgstr "https://wp-modula.com"
+
+#. Description of the plugin/theme
+msgid ""
+"Modula is one of the best & most creative WordPress gallery plugins. Use it "
+"to create a great grid or masonry image gallery."
+msgstr ""
+"Modula to jedna z najlepszych i najbardziej kreatywnych wtyczek galerii "
+"WordPress. Użyj go, aby stworzyć wspaniałą siatkę lub galerię obrazów "
+"murowanych."
+
+#. Author of the plugin/theme
+msgid "WPChill"
+msgstr "WPChill"
+
+#. Author URI of the plugin/theme
+msgid "https://www.wpchill.com/"
+msgstr "https://www.wpchill.com"

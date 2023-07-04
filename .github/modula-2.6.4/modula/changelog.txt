@@ -1,0 +1,235 @@
+= 2.6.4 - 29.03.2023 =
+Fixed: "Modula Link" Guttenberg block was not displaying on front-end.
+Fixed: Hover effects color input won't autocorrect while the hex code is added.
+
+= 2.6.3 - 13.03.2023 =
+Fixed: Text For "All" filter setting is now enabled when Hide "All" filter is off.
+Changed: Deactivate/Activate licence on plugin deactivation/activation.
+Fixed: Google Font family is enqueued even if gallery title and caption is hidden.
+Fixed: Modula Defaults upsell in widgets with active license.
+Fixed: Images hidden from lightbox were not being hidden with PRO version.
+Added: New hover effect "Centered Bottom"
+Fixed: Email social sharing setting appears in Lightbox&links tab
+
+= 2.6.2 - 13.12.2022 =
+Changed: Metabox Accordeons no longer collapse on setting disabling.
+Fixed: Warning if 'children' setting property not set
+Fixed: Under Image admin hover effect visual fix.
+Fixed: Social icons on Ming & Lily Hover effects can't be clicked.
+Fixed: Issue with license notifications
+Added: Polish translations
+
+= 2.6.1 - 18/10/2022 =
+Changed: Removed image title and aria-label attributes for images containing links ( [#481](https://github.com/WPChill/modula-pro/issues/481) )
+Fixed: Milo effect did not display the image caption on hover ( [#480](https://github.com/WPChill/modula-pro/issues/480) )
+Added: Polish translation ( [#476](https://github.com/WPChill/modula-pro/issues/476) )
+Fixed: Hover Effect: Under Image won't show overlaping images while the gallery is loading ( [#501](https://github.com/WPChill/modula-pro/issues/501) )
+Fixed: Fixed Modula Link widget not working on Wordpress v6+ ( [#324](https://github.com/WPChill/modula-pro/issues/324) )
+Added: Metabox Accordeons ( [#503](https://github.com/WPChill/modula-pro/issues/503) )
+
+= 2.6.0 - 18/02/2022 =
+Added: Settings tab notification for addons avaliable but not installed.
+Changed: Update license checker submodule
+Changed: Gallery title html element (from h2 to div), css as the selector is not longer h2 - https://github.com/WPChill/modula-lite/issues/495
+Changed: Access limitation based on license validation
+Changed: Upsells output
+Fixed: Image sorting based on date
+Fixed: Closing button always last
+Fixed : Filters would display in Gutenberg post editor when having slider gallery type
+
+= 2.5.3 - 26.07.2021 =
+Fixed: Method assignment for upsells
+Fixed: License activation/deactivation
+Fixed: PHP8 extensions installation compatibility
+
+= 2.5.2 - 14.07.2021 =
+Added: data-srcset and data-sizes to template images for use of lazy loading
+Fixed: added missing transients to the uninstall process
+
+= 2.5.1 - 05.04.2021 =
+Fixed: Srcset generated a nonexistent image
+
+= 2.5.0 - 02.04.2021 =
+Added: Option to restrict the lightbox on desktop/mobile view
+Added: A max image # for mobile view
+Added: New option for Caption overlap in lightbox, now the caption being able to overlap the image. With this option set to ON, when not hovering the lightboxm the caption will also disappear like the buttons
+Added: Option to copy the caption, in mobile view, in the lightbox by double tapping
+Added: Color option for Fancybox lightbox
+Added: Mobile view separate dropdown filters
+Added: Grey scale image hover effect
+Added: Option for mobile view for tap/double tap on grid to trigger hover effect/open lightbox
+Changed: Extensions page and how addons are installed/deactivated/activated, now using AJAX
+Changed: The way the license is activated, now using AJAX + added a mass install/deactivate option
+Changed: Keyboard navigation ON by default
+Changed: Improved padding on some hover effects
+Changed: Filters text align option - update options
+Fixed: Powered by option not being displayed OK with filters on Left&Right
+Fixed: Admin image edit search for filter
+Fixed: Under image hover effect issue with Automatic columns
+Fixed: Invalid license message still being there after activating a valid one
+Fixed: Minor type on filter positioning
+Fixed: Lightbox zoom on content click
+
+= 2.4.3 - 14.12.2020 =
+Fixed hover effects
+
+= 2.4.2 - 14.12.2020 =
+Fixed spacing and responsiveness of hover effects
+Added classes and targeted CSS to filters menu so that it won't overwrite or won't be overwritten by theme/plugins
+Fixed gallery width when selecting vertical filters but no filters exist
+Fixed lightbox animations and transitions
+Fixed filters spacing and alignment
+Fixed missing CSS font family
+
+= 2.4.1 -  =
+Added the Install & Activate LITE Notice
+
+= 2.4.0 -  =
+Added Gutenberg block for Modula Link
+Fix for Lily hover effect stretching the image
+Typos fixes
+Fixed migration data
+Preparation for Modula Defaults
+
+= 2.3.3 - 17/08/2020 =
+Fixed compatibility issues with WordPress 5.5
+
+= 2.3.2 - 03/07/2020 =
+Fix vertical filters for custom grid display
+Fixed custom cursor
+Fixed lightbox captions when using max images count setting
+Fixed installing extensions from the Extensions tab
+Added gallery title and title type setting
+Fix duped images in lightbox when using shuffle + max image count + show all in lightbox settings
+Fix Under image hover effect
+Fixed badge for extensions
+Fix hover effects hover color bug for columns in grid type
+Added dropdown filters
+Fixed title and caption for modula-link shortcode
+Added a filter for media library, showing only images when adding images to Modula Gallery
+Added filter for hidden items : modula_hidden_items_data
+Added email share inside lightbox
+Fixed double fancybox enqueue when using multiple combinations of modula-link and modula-gallery shortcodes
+
+= 2.3.1 - 21/05/2020 =
+Fixed filters with lazyload option enabled
+Fixed gallery and link on same page
+Fixed lightbox text align
+
+= 2.3.0 - 18/05/2020 =
+Single lightbox ( FancyBox ) implementation update
+Filters placement fix
+Default filter fix
+Badges fix
+Added social icons in lightbox
+Some admin UI improvements
+Added background and opacity settings to lightbox
+Registered CSS and JS handle personalization
+Z-index problem fix with Divi theme
+Added possibility to show image title in lightbox
+Hover effects fixes
+Modula link fixes
+Translation fixes
+
+= 2.2.3 - 27/03/2020 =
+Fixed undefined error
+
+
+= 2.2.2 - 09/03/2020 =
+Display gallery id above Custom CSS editor
+Fix filters preview
+Fixed caption for images
+Added option to change Social Icon size
+Added option to align filters
+Translation fixes
+Update texts
+Custom CSS code editor fix
+
+= 2.2.1 - 05/02/2020 =
+Added the options to upload your own cursor
+Added numbers in front of hover effects
+Fixed filters color bug
+Fixed RTL on lighboxes
+
+= 2.2.0 - 20/12/2019 =
+Added a new shortcode : modula-link
+Added bulk delete
+Added more controls for title and caption
+photoGallery overlay_gallery_max value increase to 300
+Fix Caption and Image title on upload from Media Library
+Fixed incompatibility with ShortPixel Ai
+Changed how we activate licenses
+Fixed filters whe we have hidden items
+
+= 2.1.1 - 24/07/2019 =
+Added 20 more hover effects
+Added protection for license key
+Fixed issue when sorting images ( filters & video link disappeared )
+Fixed replace image functionality
+
+= 2.1.0 - 29/05/2019 =
+Added sorting option
+Added default filter
+Added filter positions
+Added filter styles
+Added collapsible filters for mobile
+Added the option to remove “All” filter
+Added max images on Custom Grid
+Added option to show all images in lightbox if max image is used
+
+Fixed “Show in lightbox only filtered images”
+Fixed Lifetime license
+Fixed "filters do not work with Hebrew characters"
+Changed CDN link
+
+
+= 2.0.6 - 26/03/2019 =
+Change how we save on bulk edit
+
+= 2.0.5 - 13/03/2019 =
+Added option to save filters without exit on bulk edit.
+
+= 2.0.4 - 16/02/2019 =
+Fixed Curtain Hover Effect
+Fixed Max Images setting
+
+= 2.0.3 - 25/01/2019 =
+Added Bulk Edit
+Fixed "Install Modula Lite" notice
+Added the functionality to install Extensions
+
+= 2.0.2 =
+Fixed Filters
+
+= 2.0.1 =
+Fixed Hover Color &amp; Opacity
+
+= 2.0.0 – 12/17/2018 =
+Major Update
+Build Custom Grids – Take full control of your galleries.
+New Admin Interface – For a more intuitive user interface, we’ve blended Modula right into WordPress.
+Drag &amp; Drop to Upload Images
+Guidelines to Help You Make the Perfect Gallery
+Preview your Gallery Without the Hassle
+
+= 1.3.1 =
+Changed lightbox script
+
+= 1.3.0 =
+Added compatibility with : WPML/Visual Composer/Page Builder by SiteOrigin
+Fixed bugs with captions &amp; titles
+Localized all text strings
+Fixed lightbox bug
+
+= 1.2.1 =
+[Fix] Update Process
+
+= 1.2.0 =
+[Fix] Various fixes to the bugs reported by customers
+
+= 1.0.6 =
+[Add] Enabled captions in LightGallery
+
+= 1.0.5 =
+[Fix] Wrong behaviour when selecting "Don't use captions"
+[Enhancement] Images on admin panel are now always squared
