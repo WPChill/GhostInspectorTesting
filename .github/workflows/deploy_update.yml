@@ -1,19 +1,1 @@
-#name: Deploy Website
 
-#on:
-  #push:
-    #branches:
-      #- main  # Replace with your main branch name
-
-#jobs:
-  #deploy:
-    #runs-on: ubuntu-latest  # Choose the appropriate runner for your platform
-
-    #steps:
-      #- name: Checkout repository
-        #uses: actions/checkout@v2  # Use the corresponding checkout action for your CI/CD platform
-
-      #- name: Verify latest commit and deploy
-        #run: |
-           #Run the update script
-           #./update_website.sh
