@@ -1,4 +1,23 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
+name: PHP Tests
+
+on:
+  push:
+    branches:
+      - main
+      - release
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-version:
+          - '7.4'
+          - '8.0'
+          - '8.1'
+          - '8.2.0'
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
