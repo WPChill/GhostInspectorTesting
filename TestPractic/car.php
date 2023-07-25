@@ -4,7 +4,8 @@
  * Description: Test Practice WordPress
  */
 
-function custom_car_post_type() {
+function custom_car_post_type()
+{
     $labels = array(
         'name' => 'Cars',
         'singular_name' => 'Car',
@@ -38,27 +39,29 @@ function custom_car_post_type() {
 }
 add_action('init', 'custom_car_post_type');
 
-function add_custom_fields_to_car_posts() {
+function add_custom_fields_to_car_posts()
+{
     $car_posts = get_post(array('post_type'=>'car','posts_per_page'=>-1,'fields'=>'ids',));
     $fuel_options = array('Gasoline', 'Diesel', 'Electric', 'GPL');
     $manufacturer_options = array('VW', 'Renault', 'Mercedes');
     $color_options = array('Red', 'Blue', 'Green','Yellow');
-    function car_custom_fields_meta_box() {
+    function car_custom_fields_meta_box()
+    {
         add_meta_box(
             'car_custom_fields_meta_box',
             'Car Custom Fields',
             'car_custom_fields_meta_box_callback',
-            'car', // Replace 'car' with the actual slug of your custom post type
+            'home',
             'normal',
             'high'
         );
     }
-    function car_custom_fields_meta_box_callback($post) {
+    function car_custom_fields_meta_box_callback($post)
+    {
 
         $fuel_value = get_post_meta($post->ID, 'fuel', true);
         $manufacturer_value = get_post_meta($post->ID, 'manufacturer', true);
         $color_value = get_post_meta($post->ID, 'color', true);
-
 
         ?>
         <table class="form-table">
@@ -77,7 +80,8 @@ function add_custom_fields_to_car_posts() {
         </table>
         <?php
     }
-    function car_save_custom_fields($post_id) {
+    function car_save_custom_fields($post_id)
+    {
         if (wp_is_post_autosave($post_id) || wp_is_post_revision($post_id)) {
             return;
         }
@@ -111,16 +115,32 @@ function add_custom_fields_to_car_posts() {
         }
     }
 }
-function carlist_shortcode($atts) {
+function carlist_shortcode($atts)
+{
     $args = shortcode_atts(
         array('fuel' => '','manufacturer' => '','color' => '','showfilters' => 1,),
         $atts
     );
+
     $car_query_args = array(
         'post_type' => 'car',
         'posts_per_page' => -1,
+        'meta_query'=>array(),
     );
-
+if(!empty($args['fuel'])){
+    $car_query_args['meta_query']=array(
+     'post_type'=>'car',
+     'posts_per_page'=>-1,
+     "meta_query"=>array(),
+    );
+}
+if(!empty($args['manufacturer'])){
+    $car_query_args['meta_query'][]=array(
+            'key'=>'manufacturer',
+        'value'=>$args['manufacturer'],
+        'compare'=>'LIKE'
+    );
+}
     $car_query = new WP_Query($car_query_args);
     $output = '';
     if ($car_query->have_posts()) {
@@ -135,6 +155,8 @@ function carlist_shortcode($atts) {
                 <input type="submit" value="Filter">
             </form>';
         }
+
+
         while ($car_query->have_posts()) {
             $car_query->the_post();
             $output .= '<article id="post-' . get_the_ID() . '" >
@@ -155,8 +177,8 @@ function carlist_shortcode($atts) {
     return $output;
 }
 
-add_action('wp_enqueue_scripts', 'enqueue_parent_styles');
-function enqueue_parent_styles()
+
+function enqueue_parent_styles(): void
 {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
 }
@@ -164,3 +186,4 @@ add_action('init', 'add_custom_fields_to_car_posts');
 add_action('add_meta_boxes', 'car_custom_fields_meta_box');
 add_action('save_post', 'car_save_custom_fields');
 add_shortcode('carlist', 'carlist_shortcode');
+add_action('wp_enqueue_scripts', 'enqueue_parent_styles');
