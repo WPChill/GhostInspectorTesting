@@ -40,10 +40,10 @@ function cpt_custom_car_post_type()
 add_action('init', 'cpt_custom_car_post_type');
 function cpt_add_custom_fields_to_car_posts()
 {
-    $car_posts = get_post(array('post_type'=>'car','posts_per_page'=>-1,'fields'=>'ids',));
+    $car_posts = get_post(array('post_type' => 'car', 'posts_per_page' => -1, 'fields' => 'ids',));
     $fuel_options = array('Gasoline', 'Diesel', 'Electric', 'GPL');
     $manufacturer_options = array('Opel', 'Renault', 'Dacia');
-    $color_options = array('Red', 'Blue', 'Green', 'Black','White','Yellow');
+    $color_options = array('Red', 'Blue', 'Green', 'Black', 'White', 'Yellow');
 
     foreach ($car_posts as $post_id) {
         if (get_post_type($post_id) == 'car') {
@@ -57,8 +57,10 @@ function cpt_add_custom_fields_to_car_posts()
             add_post_meta($post_id, 'color', $selected_color, true) or update_post_meta($post_id, 'color', $selected_color);
         }
     }
-    add_action('init', 'cpt_add_custom_fields_to_car_posts');
-    function cpt_car_custom_fields_meta_box()
+}
+add_action('init', 'cpt_add_custom_fields_to_car_posts');
+function cpt_car_custom_fields_meta_box()
+{
     {
         add_meta_box(
             'cpt_car_custom_fields_meta_box',
@@ -69,9 +71,10 @@ function cpt_add_custom_fields_to_car_posts()
             'low'
         );
     }
-
-    add_action('add_meta_boxes', 'cpt_car_custom_fields_meta_box');
-    function cpt_car_custom_fields_meta_box_callback($post)
+}
+add_action('add_meta_boxes', 'cpt_car_custom_fields_meta_box');
+function cpt_car_custom_fields_meta_box_callback($post)
+{
     {
         $fuel_value = get_post_meta($post->ID, 'fuel', true);
         $manufacturer_value = get_post_meta($post->ID, 'manufacturer', true);
@@ -94,7 +97,9 @@ function cpt_add_custom_fields_to_car_posts()
         </table>
         <?php
     }
-    function cpt_car_save_custom_fields($post_id)
+}
+ function cpt_car_save_custom_fields($post_id)
+ {
     {
         if (wp_is_post_autosave($post_id) || wp_is_post_revision($post_id)) {
             return;
