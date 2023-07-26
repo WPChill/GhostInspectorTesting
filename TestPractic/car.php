@@ -38,13 +38,12 @@ function cpt_custom_car_post_type()
     register_post_type('car', $args);
 }
 add_action('init', 'cpt_custom_car_post_type');
-
 function cpt_add_custom_fields_to_car_posts()
 {
     $car_posts = get_post(array('post_type'=>'car','posts_per_page'=>-1,'fields'=>'ids',));
     $fuel_options = array('Gasoline', 'Diesel', 'Electric', 'GPL');
-    $manufacturer_options = array('VW', 'Renault', 'Mercedes');
-    $color_options = array('Red', 'Blue', 'Green','Yellow');
+    $manufacturer_options = array('Opel', 'Renault', 'Dacia');
+    $color_options = array('Red', 'Blue', 'Green', 'Black','White','Yellow');
 
     foreach ($car_posts as $post_id) {
         if (get_post_type($post_id) == 'car') {
@@ -58,7 +57,7 @@ function cpt_add_custom_fields_to_car_posts()
             add_post_meta($post_id, 'color', $selected_color, true) or update_post_meta($post_id, 'color', $selected_color);
         }
     }
-
+    add_action('init', 'cpt_add_custom_fields_to_car_posts');
     function cpt_car_custom_fields_meta_box()
     {
         add_meta_box(
@@ -70,6 +69,7 @@ function cpt_add_custom_fields_to_car_posts()
             'low'
         );
     }
+
     add_action('add_meta_boxes', 'cpt_car_custom_fields_meta_box');
     function cpt_car_custom_fields_meta_box_callback($post)
     {
@@ -116,11 +116,16 @@ function cpt_add_custom_fields_to_car_posts()
         }
     }
 }
-
+add_action('save_post', 'cpt_car_save_custom_fields');
 function cpt_carlist_shortcode($atts)
 {
     $args = shortcode_atts(
-        array('fuel' => '', 'manufacturer' => '', 'color' => '', 'showfilters' => 1),
+        array(
+            'fuel' => '',
+            'manufacturer' => '',
+            'color' => '',
+            'showfilters' => 1,
+        ),
         $atts
     );
 
@@ -129,48 +134,74 @@ function cpt_carlist_shortcode($atts)
         'posts_per_page' => -1,
         'meta_query' => array(),
     );
+
+    if (!empty($args['manufacturer'])) {
+        $car_query_args['meta_query'][] = array(
+            'key' => 'manufacturer',
+            'value' => $args['manufacturer'],
+            'compare' => 'LIKE',
+        );
+    }
+
     if (!empty($args['fuel'])) {
         $car_query_args['meta_query'][] = array(
             'key' => 'fuel',
             'value' => $args['fuel'],
-            'compare' => 'LIKE'
+            'compare' => 'LIKE',
         );
     }
-if(!empty($args['manufacturer'])){
-    $car_query_args['meta_query'][]=array(
-            'key'=>'manufacturer',
-        'value'=>$args['manufacturer'],
-        'compare'=>'LIKE'
-    );
-}
+    if (!empty($args['color'])) {
+        $car_query_args['meta_query'][] = array(
+            'key' => 'color',
+            'value' => $args['color'],
+            'compare' => 'LIKE',
+        );
+    }
+
     $car_query = new WP_Query($car_query_args);
     $output = '';
-    if ($car_query->have_posts()) {
-        if ($args['showfilters'] == 1) {
-            $output .= '<form method="get" action="' . esc_url(home_url('/')) . '"> 
-                <label for="fuel">Fuel:</label>
-                <input type="text" name="fuel" id="fuel" value="' . esc_attr($args['fuel']) . '"><br>
-                <label for="manufacturer">Manufacturer:</label>
-                <input type="text" name="manufacturer" id="manufacturer" value="' . esc_attr($args['manufacturer']) . '"><br>
-                <label for="color">Color:</label>
-                <input type="text" name="color" id="color" value="' . esc_attr($args['color']) . '"><br>   
-                <input type="submit" value="Filter">
-            </form>';
-        }
 
+    if ($args['showfilters'] == 1) {
+        $output .= '<form id="car-filter-form" method="get" action="' . esc_url(home_url('/')) . '">
+            <label for="manufacturer">Manufacturer:</label>
+            <select name="manufacturer" id="manufacturer">
+                <option value="">All</option>
+                <option value="Opel">Opel</option>
+                <option value="Renault">Renault</option>
+                <option value="Dacia">Dacia</option>
+            </select>
+            <label for="fuel">Fuel:</label>
+            <select name="fuel" id="fuel">
+                <option value="">All</option>
+                <option value="Gasoline">Gasoline</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Electric">Electric</option>
+                <option value="GPL">GPL</option>
+            </select>
+            <label for="color">Color:</label>
+            <select name="color" id="color">
+                <option value="">All</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Black">Black</option>
+                <<option value="White">White</option>
+            </select>
+            <input type="submit" value="Filter">
+        </form>';
+    }
+
+    if ($car_query->have_posts()) {
 
         while ($car_query->have_posts()) {
             $car_query->the_post();
-            $output .= '<article id="post-' . get_the_ID() . '" >
-                <header class="entry-header">
-                    <h2 class="entry-title">' . esc_html(get_the_title()) . '</h2>
-                </header>
-                <div class="entry-content">' . wp_kses_post(get_the_content()) . '
-                    <p>Fuel: ' . esc_html(get_post_meta(get_the_ID(), 'fuel', true)) . '</p>
-                    <p>Manufacturer: ' . esc_html(get_post_meta(get_the_ID(), 'manufacturer', true)) . '</p>
-                    <p>Color: ' . esc_html(get_post_meta(get_the_ID(), 'color', true)) . '</p>
-                </div>
-            </article>';
+            $output .= '<p>';
+            $output .= '<strong>' . esc_html(get_the_title()) . '</strong><br>';
+            $output .= 'Manufacturer: ' . esc_html(get_post_meta(get_the_ID(), 'manufacturer', true)) . '<br>';
+            $output .= 'Fuel: ' . esc_html(get_post_meta(get_the_ID(), 'fuel', true)) . '<br>';
+            $output .= 'Color: ' . esc_html(get_post_meta(get_the_ID(), 'color', true)) . '<br>';
+            $output .= '</p>';
         }
         wp_reset_postdata();
     } else {
@@ -178,14 +209,6 @@ if(!empty($args['manufacturer'])){
     }
     return $output;
 }
-
-function cpt_enqueue_parent_styles()
-{
-    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-}
-add_action('init', 'cpt_add_custom_fields_to_car_posts');
-add_action('add_meta_boxes', 'cpt_car_custom_fields_meta_box');
-add_action('save_post', 'cpt_car_save_custom_fields');
 add_shortcode('carlist', 'cpt_carlist_shortcode');
-add_action('wp_enqueue_scripts', 'cpt_enqueue_parent_styles');
+
 
