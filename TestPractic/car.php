@@ -122,6 +122,14 @@ function cpt_car_custom_fields_meta_box_callback($post)
     }
 }
 add_action('save_post', 'cpt_car_save_custom_fields');
+
+function cpt_enqueue_custom_styles()
+{
+    $css_url = plugin_dir_url(__FILE__) . '/css/custom-style.css';
+    wp_enqueue_style( 'custom-styles',$css_url , array(), '1.0' );
+}
+add_action('wp_enqueue_scripts', 'cpt_enqueue_custom_styles');
+
 function cpt_carlist_shortcode($atts)
 {
     $args = shortcode_atts(
