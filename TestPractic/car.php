@@ -133,6 +133,17 @@ function cpt_carlist_shortcode($atts)
         ),
         $atts
     );
+    if (isset($_GET['manufacturer'])) {
+        $args['manufacturer'] = sanitize_text_field($_GET['manufacturer']);
+    }
+
+    if (isset($_GET['fuel'])) {
+        $args['fuel'] = sanitize_text_field($_GET['fuel']);
+    }
+
+    if (isset($_GET['color'])) {
+        $args['color'] = sanitize_text_field($_GET['color']);
+    }
 
     $car_query_args = array(
         'post_type' => 'car',
