@@ -1,29 +1,83 @@
+/* custom-style.css */
 .car-list-table {
     width: 100%;
     border-collapse: collapse;
 }
+
 .car-list-table th {
     padding: 10px;
     text-align: left;
     background-color: #f2f2f2;
     border-bottom: 1px solid #ccc;
 }
+
 .car-list-table td {
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
+
 .car-list-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+
 .car-list-table .car-name {
     font-weight: bold;
 }
+
 .car-list-table .fuel {
     color: green;
 }
+
 .car-list-table .manufacturer {
     color: blue;
 }
+
 .car-list-table .color {
     text-transform: capitalize;
+}
+
+/* Add spacing between rows using padding on table cells */
+.car-list-table tr td {
+    padding-bottom: 10px; /* 10px spacing */
+}
+
+/* New styles for the custom layout */
+.car-container {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #e0e0e0; /* Coloured background for car container */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.car-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.car-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-cell {
+    flex-basis: 30%; /* Width of each cell */
+    background-color: #494949; /* Other background color for car details cell */
+    color: #fff; /* White text color for car details */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-left: 10px; /* Same margin for left part*/
+}
+
+/* Separate style for the car name cell , created a new class for this to be different*/
+.car-name-cell {
+    background-color: #918f8f; /* Brighter gray background for car name cell */
+    color: #fff; /* White text color for car name cell */
+    padding: 10px;
+    border-radius: 5px;
+    flex-basis: 40%; /* Width of the car name cell */
+    margin-right: 10px;
+    margin-left: 10px; /* Same margin for left part*/
+    margin-bottom: 10px; /* Added bottom margin to separate the cell from the other cells*/
 }
