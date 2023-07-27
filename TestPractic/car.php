@@ -4,7 +4,7 @@
  * Description: Test Practice WordPress
  */
 
-function cpt_custom_car_post_type()
+function cpt_custom_car_post_type(): void
 {
     $labels = array(
         'name' => 'Cars',
@@ -38,7 +38,7 @@ function cpt_custom_car_post_type()
     register_post_type('car', $args);
 }
 add_action('init', 'cpt_custom_car_post_type');
-function cpt_add_custom_fields_to_car_posts()
+function cpt_add_custom_fields_to_car_posts(): void
 {
     $car_posts = get_post(array('post_type' => 'car', 'posts_per_page' => -1, 'fields' => 'ids',));
     $fuel_options = array('Gasoline', 'Diesel', 'Electric', 'GPL');
@@ -59,7 +59,7 @@ function cpt_add_custom_fields_to_car_posts()
     }
 }
 add_action('init', 'cpt_add_custom_fields_to_car_posts');
-function cpt_car_custom_fields_meta_box()
+function cpt_car_custom_fields_meta_box(): void
 {
     {
         add_meta_box(
@@ -73,7 +73,7 @@ function cpt_car_custom_fields_meta_box()
     }
 }
 add_action('add_meta_boxes', 'cpt_car_custom_fields_meta_box');
-function cpt_car_custom_fields_meta_box_callback($post)
+function cpt_car_custom_fields_meta_box_callback($post): void
 {
     {
         $fuel_value = get_post_meta($post->ID, 'fuel', true);
@@ -98,7 +98,7 @@ function cpt_car_custom_fields_meta_box_callback($post)
         <?php
     }
 }
- function cpt_car_save_custom_fields($post_id)
+ function cpt_car_save_custom_fields($post_id): void
  {
     {
         if (wp_is_post_autosave($post_id) || wp_is_post_revision($post_id)) {
@@ -123,14 +123,7 @@ function cpt_car_custom_fields_meta_box_callback($post)
 }
 add_action('save_post', 'cpt_car_save_custom_fields');
 
-function cpt_enqueue_custom_styles()
-{
-    $css_url = plugin_dir_url(__FILE__) . '/css/custom-style.css';
-    wp_enqueue_style( 'custom-styles',$css_url , array(), '1.0' );
-}
-add_action('wp_enqueue_scripts', 'cpt_enqueue_custom_styles');
-
-function cpt_carlist_shortcode($atts)
+function cpt_carlist_shortcode($atts): string
 {
     $args = shortcode_atts(
         array(
@@ -217,16 +210,33 @@ function cpt_carlist_shortcode($atts)
     }
 
     if ($car_query->have_posts()) {
+        $output .= '<table class="car-list-table">';
+        $output .= '<tr>';
+        $output .= '<th>Car</th>';
+        $output .= '<th>Manufacturer</th>';
+        $output .= '<th>Fuel</th>';
+        $output .= '<th>Color</th>';
+        $output .= '</tr>';
 
         while ($car_query->have_posts()) {
             $car_query->the_post();
-            $output .= '<p>';
-            $output .= '<strong>' . esc_html(get_the_title()) . '</strong><br>';
-            $output .= 'Manufacturer: ' . esc_html(get_post_meta(get_the_ID(), 'manufacturer', true)) . '<br>';
-            $output .= 'Fuel: ' . esc_html(get_post_meta(get_the_ID(), 'fuel', true)) . '<br>';
-            $output .= 'Color: ' . esc_html(get_post_meta(get_the_ID(), 'color', true)) . '<br>';
-            $output .= '</p>';
+
+            $car_name = esc_html(get_the_title());
+            $manufacturer = esc_html(get_post_meta(get_the_ID(), 'manufacturer', true));
+            $fuel = esc_html(get_post_meta(get_the_ID(), 'fuel', true));
+            $color = esc_html(get_post_meta(get_the_ID(), 'color', true));
+
+            $output .= '<div class="car-container">';
+            $output .= '<div class="detail-cell car-name-cell">' . $car_name . '</div>';
+            $output .= '<div class="car-details">';
+            $output .= '<div class="detail-cell">' . $manufacturer . '</div>';
+            $output .= '<div class="detail-cell">' . $fuel . '</div>';
+            $output .= '<div class="detail-cell">' . $color . '</div>';
+            $output .= '</div>';
+            $output .= '</div>';
         }
+
+
         wp_reset_postdata();
     } else {
         $output .= 'No car posts found.';
@@ -234,5 +244,10 @@ function cpt_carlist_shortcode($atts)
     return $output;
 }
 add_shortcode('carlist', 'cpt_carlist_shortcode');
-
-
+function cpt_enqueue_custom_styles()
+{
+    $css_url = plugin_dir_url(__FILE__) . '/css/custom-style.css';
+    wp_enqueue_style( 'custom-styles',$css_url , array(), '1.0' );
+}
+add_action('wp_enqueue_scripts', 'cpt_enqueue_custom_styles');
+echo 'styles are being loaded.';
