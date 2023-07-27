@@ -98,8 +98,8 @@ function cpt_car_custom_fields_meta_box_callback($post): void
         <?php
     }
 }
- function cpt_car_save_custom_fields($post_id): void
- {
+function cpt_car_save_custom_fields($post_id): void
+{
     {
         if (wp_is_post_autosave($post_id) || wp_is_post_revision($post_id)) {
             return;
@@ -179,34 +179,37 @@ function cpt_carlist_shortcode($atts): string
     $output = '';
 
     if ($args['showfilters'] == 1) {
-        $output .= '<form id="car-filter-form" method="get" action="' . esc_url(home_url('/')) . '">
-            <label for="manufacturer">Manufacturer:</label>
-            <select name="manufacturer" id="manufacturer">
-                <option value="">All</option>
-                <option value="Opel">Opel</option>
-                <option value="Renault">Renault</option>
-                <option value="Dacia">Dacia</option>
-            </select>
-            <label for="fuel">Fuel:</label>
-            <select name="fuel" id="fuel">
-                <option value="">All</option>
-                <option value="Gasoline">Gasoline</option>
-                <option value="Diesel">Diesel</option>
-                <option value="Electric">Electric</option>
-                <option value="GPL">GPL</option>
-            </select>
-            <label for="color">Color:</label>
-            <select name="color" id="color">
-                <option value="">All</option>
-                <option value="Red">Red</option>
-                <option value="Blue">Blue</option>
-                <option value="Green">Green</option>
-                <option value="Yellow">Yellow</option>
-                <option value="Black">Black</option>
-                <<option value="White">White</option>
-            </select>
-            <input type="submit" value="Filter">
-        </form>';
+        $output .= '<form id="car-filter-form" method="get" action="' . esc_url(home_url('/')) . '">';
+        $output .= '<label for="manufacturer">Manufacturer:</label>';
+        $output .= '<select name="manufacturer" id="manufacturer">';
+        $output .= '<option value="">All</option>';
+        $output .= '<option value="Opel" ' . selected($args['manufacturer'], 'Opel', false) . '>Opel</option>';
+        $output .= '<option value="Renault" ' . selected($args['manufacturer'], 'Renault', false) . '>Renault</option>';
+        $output .= '<option value="Dacia" ' . selected($args['manufacturer'], 'Dacia', false) . '>Dacia</option>';
+        $output .= '</select>';
+
+        $output .= '<label for="fuel">Fuel:</label>';
+        $output .= '<select name="fuel" id="fuel">';
+        $output .= '<option value="">All</option>';
+        $output .= '<option value="Gasoline" ' . selected($args['fuel'], 'Gasoline', false) . '>Gasoline</option>';
+        $output .= '<option value="Diesel" ' . selected($args['fuel'], 'Diesel', false) . '>Diesel</option>';
+        $output .= '<option value="Electric" ' . selected($args['fuel'], 'Electric', false) . '>Electric</option>';
+        $output .= '<option value="GPL" ' . selected($args['fuel'], 'GPL', false) . '>GPL</option>';
+        $output .= '</select>';
+
+        $output .= '<label for="color">Color:</label>';
+        $output .= '<select name="color" id="color">';
+        $output .= '<option value="">All</option>';
+        $output .= '<option value="Red" ' . selected($args['color'], 'Red', false) . '>Red</option>';
+        $output .= '<option value="Blue" ' . selected($args['color'], 'Blue', false) . '>Blue</option>';
+        $output .= '<option value="Green" ' . selected($args['color'], 'Green', false) . '>Green</option>';
+        $output .= '<option value="Yellow" ' . selected($args['color'], 'Yellow', false) . '>Yellow</option>';
+        $output .= '<option value="Black" ' . selected($args['color'], 'Black', false) . '>Black</option>';
+        $output .= '<option value="White" ' . selected($args['color'], 'White', false) . '>White</option>';
+        $output .= '</select>';
+
+        $output .= '<input type="submit" value="Filter">';
+        $output .= '</form>';
     }
 
     if ($car_query->have_posts()) {
@@ -250,4 +253,3 @@ function cpt_enqueue_custom_styles()
     wp_enqueue_style( 'custom-styles',$css_url , array(), '1.0' );
 }
 add_action('wp_enqueue_scripts', 'cpt_enqueue_custom_styles');
-echo 'styles are being loaded.';
